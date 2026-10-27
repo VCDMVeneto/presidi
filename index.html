@@ -1,0 +1,1459 @@
+<!DOCTYPE html> <!-- © 2026 Mario Dal Zuffo - V° Centro di Mobilitazione Veneto (CRI Corpo Militare). Tutti i diritti riservati. Vietati copia, modifica, distribuzione e uso senza autorizzazione scritta dell'autore. --> <html lang="it"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="robots" content="noindex"> <base target="_top"> <title>Presidi Sanitari - V Centro Mobilitazione Veneto</title> <style>body{font-family:Segoe UI,sans-serif;background:linear-gradient(180deg,#eceff3,#f5f6f8 260px);padding:24px 14px;color:#1f2933;margin:0}.container{max-width:640px;margin:auto;background:#fff;padding:0;overflow:hidden;border-radius:16px;box-shadow:0 10px 30px #0f172a1a}.container-dashboard{max-width:1250px}.container>div:not(.header){padding:0 24px 24px}.header{position:relative;margin:0 0 22px;padding:18px 24px;background:#fff;border-top:6px solid #d32f2f;border-bottom:1px solid #edf0f3;display:flex;flex-direction:column}.logo{display:block;width:100%;max-width:520px;height:auto;margin:0 auto 12px;border-radius:4px}h2{color:#d32f2f;text-transform:uppercase;margin:0;font-weight:700;text-align:center;letter-spacing:.03em;line-height:1.35;font-size:1.12em}.btn-admin-small{order:-1;align-self:flex-end;margin:-6px -10px 6px 0;background:#fff;border:1px solid #d5dbe1;border-radius:999px;padding:6px 12px;font-size:.75em;font-weight:600;color:#475569;box-shadow:0 1px 2px #0000000d;cursor:pointer}.btn-admin-small:hover{background:#f1f5f9}.sezione{border:1px solid #e3e6ea;border-radius:12px;padding:16px 18px 18px;margin-bottom:16px;background:#fff}.sez-titolo{display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:.95em;font-weight:700;color:#1f2933}.sez-titolo .num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fdeaea;color:#d32f2f;font-size:.8em;font-weight:800;flex:none}.guasto-ui .sez-titolo .num{background:#fff3e0;color:#e65100}.sez-nota{font-size:.8em;color:#6b7280;margin:0 0 4px 34px}.griglia-2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 12px}label{display:block;font-weight:700;font-size:.82em;color:#374151;margin-top:12px}input,select,textarea{width:100%;margin-top:5px;box-sizing:border-box;border:1px solid #d5dbe1;border-radius:8px;padding:11px 12px;font-size:.95em;background:#fbfcfd;font-family:inherit;transition:border-color .15s,box-shadow .15s,background .15s}input:focus,select:focus,textarea:focus{outline:none;border-color:#d32f2f;background:#fff;box-shadow:0 0 0 3px #d32f2f1f}.guasto-ui input:focus,.guasto-ui select:focus,.guasto-ui textarea:focus{border-color:#ef6c00;box-shadow:0 0 0 3px #ef6c0026}textarea{resize:vertical;min-height:90px}input[type=checkbox]{width:auto;margin:0;padding:0;accent-color:#d32f2f}.save-row{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:.88em;color:#374151;cursor:pointer;font-weight:400}.save-row input{width:16px;height:16px}button{font-family:inherit}button.btn-principale{width:100%;padding:16px;background:#d32f2f;color:#fff;border:none;font-weight:700;border-radius:10px;cursor:pointer;font-size:.98em;letter-spacing:.03em;box-shadow:0 4px 12px #d32f2f40;transition:background .3s}button.btn-principale:hover:not(:disabled){background:#b71c1c}button.btn-principale:disabled{background:#999;cursor:not-allowed;box-shadow:none}.btn-guasto{width:100%;padding:15px;background:#ff9800;color:#fff;border:none;font-weight:700;border-radius:10px;cursor:pointer;margin-top:12px;font-size:1em;letter-spacing:.03em;box-shadow:0 4px 12px #ef6c0040}.btn-guasto:disabled{background:#999;cursor:not-allowed}.btn-guasto.secondario{background:#fff;color:#e65100;border:1.5px solid #ffb74d;box-shadow:none}.btn-guasto.secondario:hover{background:#fff3e0}.btn-secondario{background:#fff;color:#475569;border:1px solid #d5dbe1;border-radius:10px;padding:14px;font-weight:700;cursor:pointer;width:100%;margin-top:10px}.btn-secondario:hover{background:#f1f5f9}.titolo-schermata{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 0 16px;font-size:1.05em;letter-spacing:.03em}.foto-btns{display:flex;gap:8px;margin-top:8px}.foto-btns label{flex:1;margin:0;text-align:center;padding:12px 6px;background:#1976d2;color:#fff;border-radius:8px;cursor:pointer;font-size:.9em}.foto-btns input{display:none}.anteprime{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:8px;margin-top:10px}.anteprima{position:relative}.anteprima img{width:100%;height:90px;object-fit:cover;border-radius:6px;border:1px solid #ddd;display:block;cursor:zoom-in}.anteprima button{position:absolute;top:4px;right:4px;background:#000000a6;color:#fff;border:none;border-radius:50%;width:26px;height:26px;cursor:pointer;font-size:14px;line-height:1}.sugg-persone{display:none;margin-top:8px;padding:8px 10px;background:#f6f8fb;border:1px solid #e3e8ef;border-radius:8px}.sugg-persone .tit{font-size:.78em;color:#6b7280;margin-bottom:6px}.sugg-persone button{display:inline-flex;align-items:center;gap:6px;margin:0 6px 6px 0;padding:7px 12px;border-radius:999px;border:1px solid #cbd5e1;background:#fff;color:#1f2933;font-size:.88em;font-weight:600;cursor:pointer}.sugg-persone button:hover{border-color:#d32f2f;background:#fdeaea}#customAlertOverlay,#customConfirmOverlay{display:none;position:fixed;inset:0;background:#0009;z-index:3000}.custom-alert-popup{background:#fff;width:85%;max-width:420px;margin:20vh auto 0;padding:25px;border-radius:12px;text-align:center;box-shadow:0 5px 20px #0000004d;border-top:6px solid #d32f2f}.custom-confirm-popup{background:#fff;width:85%;max-width:420px;margin:20vh auto 0;padding:25px;border-radius:12px;text-align:center;box-shadow:0 5px 20px #0000004d;border-top:6px solid #1976d2}#customAlertMessage,#customConfirmMessage{font-size:1.02em;font-weight:700;color:#333;margin-bottom:20px;white-space:pre-wrap;word-wrap:break-word;line-height:1.4}.btn-chiudi-alert{background:#d32f2f;color:#fff;padding:12px 35px;border:none;border-radius:6px;cursor:pointer;font-weight:700;font-size:1em;text-transform:uppercase}.btn-confirm-yes{background:#4caf50;color:#fff;padding:12px 25px;border:none;border-radius:6px;cursor:pointer;font-weight:700;font-size:1em;margin-right:10px}.btn-confirm-no{background:#555;color:#fff;padding:12px 25px;border:none;border-radius:6px;cursor:pointer;font-weight:700;font-size:1em}.barra-utente{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;background:#f2f4f7;border:1px solid #e3e6ea;border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:.88em}.barra-utente button{background:#fff;border:1px solid #cbd5e1;color:#333;padding:5px 10px;border-radius:4px;cursor:pointer;font-size:.9em;font-weight:600}.tab-bar{display:flex;gap:4px;margin-bottom:14px;border-bottom:2px solid #eee;flex-wrap:wrap}.tab-btn{background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;padding:10px 18px;font-weight:700;font-size:.95em;color:#666;cursor:pointer}.tab-btn.attivo{color:#d32f2f;border-bottom-color:#d32f2f}.badge-conta{background:#d32f2f;color:#fff;border-radius:10px;padding:1px 7px;font-size:.8em;margin-left:4px}.kpi-griglia{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}.kpi{border:1px solid #e2e8f0;border-radius:8px;padding:10px 12px;background:#fafafa;cursor:pointer;text-align:left}.kpi:hover{background:#f1f5f9}.kpi .num{font-size:1.6em;font-weight:700}.kpi .lbl{font-size:.8em;color:#555}.kpi.verde .num{color:#2e7d32}.kpi.giallo .num{color:#b26a00}.kpi.rosso .num{color:#c62828}.kpi.blu .num{color:#1565c0}.table-dashboard{width:100%;border-collapse:collapse;margin-top:10px;font-size:.85em}.table-dashboard th,.table-dashboard td{border:1px solid #ddd;padding:8px 9px;text-align:left;vertical-align:middle}.table-dashboard th{background-color:#f2f4f7;color:#d32f2f;font-weight:700}.table-dashboard tr.cliccabile{cursor:pointer}.table-dashboard tr.cliccabile:hover td{background:#fafbfc}.box-ricerca{background:#f4f6f9;border:1px solid #cbd5e1;border-top:4px solid #1976d2;border-radius:8px;padding:12px 15px;margin-bottom:12px}.grid-ricerca{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.grid-ricerca label{margin-top:0;font-size:.8em;color:#475569}.grid-ricerca input,.grid-ricerca select{padding:7px 10px;font-size:.85em;margin-top:3px}.barra-azioni{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px}.btn-az{border:none;padding:7px 12px;border-radius:6px;cursor:pointer;font-size:.85em;font-weight:700;color:#fff;background:#1976d2;display:inline-flex;align-items:center;gap:5px}.btn-az.verde{background:#2e7d32}.btn-az.rosso{background:#d32f2f}.btn-az.grigio{background:#607d8b}.btn-az.viola{background:#6a1b9a}.btn-az.arancio{background:#ef6c00}.btn-az.chiaro{background:#fff;color:#333;border:1px solid #ccc}.btn-az:disabled{opacity:.5;cursor:not-allowed}.btn-mini{background:#fff;border:1px solid #cbd5e1;padding:4px 9px;border-radius:4px;cursor:pointer;font-size:.85em;margin:0 4px 4px 0}.btn-mini.rosso{border-color:#ef9a9a;color:#c62828}.stato-badge{padding:3px 8px;border-radius:4px;font-weight:700;font-size:.8em;text-align:center;display:inline-block;white-space:nowrap}.st-PRONTO{background:#d4edda;color:#155724;border:1px solid #c3e6cb}.st-RISERVA{background:#fff3cd;color:#856404;border:1px solid #ffeeba}.st-NON_IDONEO{background:#f8d7da;color:#721c24;border:1px solid #f5c6cb}.st-DA_VERIFICARE{background:#e3f2fd;color:#0d47a1;border:1px solid #bbdefb}.st-FUORI_SERVIZIO{background:#e0e0e0;color:#424242;border:1px solid #bdbdbd}.st-APERTA{background:#f8d7da;color:#721c24;border:1px solid #f5c6cb}.st-IN_CARICO{background:#fff3cd;color:#856404;border:1px solid #ffeeba}.st-CHIUSA{background:#d4edda;color:#155724;border:1px solid #c3e6cb}.stato-grande{border-radius:12px;padding:16px 18px;margin-bottom:16px;font-weight:800;font-size:1.15em;letter-spacing:.02em;display:flex;align-items:center;gap:12px}.stato-grande .ico{font-size:1.6em;line-height:1}.stato-grande small{display:block;font-weight:600;font-size:.72em;letter-spacing:0;margin-top:3px;opacity:.9}.stato-grande.st-PRONTO{border:2px solid #81c784}.stato-grande.st-RISERVA{border:2px solid #ffd54f}.stato-grande.st-NON_IDONEO{border:2px solid #e57373}.stato-grande.st-DA_VERIFICARE{border:2px solid #90caf9}.stato-grande.st-FUORI_SERVIZIO{border:2px solid #9e9e9e}.chip{display:inline-block;padding:1px 7px;border-radius:10px;font-size:.78em;font-weight:700;white-space:nowrap}.chip.scaduto{background:#c62828;color:#fff}.chip.breve{background:#ffe0b2;color:#e65100}.chip.lunga{background:#fff8e1;color:#8d6e00}.chip.ok{background:#e8f5e9;color:#2e7d32}.chip.avviso{background:#e3f2fd;color:#0d47a1}.scheda-testa{text-align:center;margin:-6px 0 14px}.scheda-testa .codice{font-size:1.6em;font-weight:800;letter-spacing:.04em}.scheda-testa .tipo{font-weight:700;color:#d32f2f;text-transform:uppercase;font-size:.85em;letter-spacing:.05em}.scheda-testa .ubic{color:#555;font-size:.88em;margin-top:4px}.info-righe{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.9em}.info-righe div:nth-child(odd){color:#6b7280}.info-righe div:nth-child(2n){font-weight:600}.tab-contenuto{width:100%;border-collapse:collapse;font-size:.88em;margin-top:6px}.tab-contenuto td,.tab-contenuto th{border-bottom:1px solid #eee;padding:6px 4px;text-align:left;vertical-align:top}.tab-contenuto th{color:#6b7280;font-weight:600;font-size:.9em}.vuoto{color:#6b7280;font-style:italic;font-size:.9em;margin:6px 0}.voce{border-bottom:1px solid #eef0f2;padding:10px 0}.voce:last-child{border-bottom:none}.voce .testo{font-size:.92em;margin-bottom:7px}.voce .testo .obbl{color:#d32f2f;font-weight:700}.scelte{display:flex;gap:6px}.scelte button{flex:1;padding:10px 4px;border:1.5px solid #d5dbe1;background:#fff;border-radius:8px;font-weight:700;cursor:pointer;font-size:.9em;color:#475569}.scelte button.sel-OK{background:#2e7d32;border-color:#2e7d32;color:#fff}.scelte button.sel-KO{background:#c62828;border-color:#c62828;color:#fff}.scelte button.sel-NA{background:#607d8b;border-color:#607d8b;color:#fff}.voce textarea{min-height:60px;margin-top:8px;display:none}.voce.ko textarea{display:block}.btn-tutto-ok{background:#e8f5e9;color:#2e7d32;border:1.5px solid #a5d6a7;border-radius:8px;padding:9px 12px;font-weight:700;cursor:pointer;width:100%;margin:8px 0 2px}.chip-scelta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.chip-scelta label{margin:0;padding:0;font-weight:600}.chip-scelta input{display:none}.chip-scelta span{display:inline-block;background:#f2f4f7;border:1px solid #cbd5e1;color:#333;padding:8px 13px;border-radius:16px;cursor:pointer;font-size:.88em}.chip-scelta input:checked+span{background:#ef6c00;color:#fff;border-color:#ef6c00}.esito-box{border-radius:14px;padding:22px 18px;text-align:center;margin-bottom:16px}.esito-box .ico{font-size:3em;line-height:1}.esito-box .tit{font-size:1.35em;font-weight:800;margin:8px 0}.esito-box ul{text-align:left;margin:10px 0 0;padding-left:20px;font-size:.92em}.banner-prova{background:#fff3cd;border:1px solid #ffeeba;color:#856404;border-radius:8px;padding:8px 12px;font-size:.82em;margin:0 0 14px;text-align:center;font-weight:600}.velo{display:none;position:fixed;inset:0;background:#0009;z-index:1500}.finestra{position:fixed;top:2vh;bottom:2vh;left:50%;transform:translate(-50%);width:min(1180px,96vw);background:#fff;border-radius:12px;border-top:6px solid #d32f2f;box-shadow:0 5px 25px #0000004d;display:flex;flex-direction:column;box-sizing:border-box;z-index:1600}.finestra.stretta{width:min(760px,96vw)}.fg-testa{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 22px;border-bottom:1px solid #eee;flex:none}.fg-testa h3{margin:0;font-size:1.08em;color:#d32f2f}.fg-testa .chiudi{background:none;border:none;font-size:1.5em;cursor:pointer;color:#555;line-height:1}.fg-corpo{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px 22px}.fg-corpo.due{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:22px;align-items:start}.fg-piede{display:flex;justify-content:flex-end;align-items:center;gap:8px;flex-wrap:wrap;padding:12px 22px;border-top:1px solid #eee;flex:none}.fg-piede .sx{margin-right:auto;display:flex;gap:8px;flex-wrap:wrap}body.modale-aperta{overflow:hidden}.ed-contenuto{width:100%;border-collapse:collapse;font-size:.85em}.ed-contenuto th{text-align:left;color:#555;font-weight:600;padding:4px;background:#f8f9fa}.ed-contenuto td{padding:3px 3px;vertical-align:middle;border-bottom:1px solid #f0f0f0}.ed-contenuto input{padding:6px 7px;margin:0;font-size:.95em}.ed-contenuto td.q{width:62px}.ed-contenuto td.l{width:96px}.ed-contenuto td.d{width:142px}.ed-contenuto td.x{width:30px}.diario-lista{border-left:3px solid #ffb74d;margin:6px 0 12px 4px;padding-left:12px}.diario-voce{margin-bottom:10px;font-size:.9em}.diario-voce .quando{font-weight:700;color:#e65100}.diario-voce .chi{color:#888;font-size:.85em}.voce-storico{border:1px solid #eef0f2;border-radius:8px;padding:8px 10px;margin-bottom:8px;font-size:.88em;cursor:pointer}.voce-storico:hover{background:#fafbfc}.qr-mini{width:110px;height:110px;border:1px solid #eee;border-radius:6px;background:#fff}.attesa{display:none;position:fixed;inset:0;background:#ffffffb3;z-index:4000;align-items:center;justify-content:center;flex-direction:column;gap:12px;font-weight:700;color:#333}.attesa.on{display:flex}.rotella{width:42px;height:42px;border:4px solid #f3c2c2;border-top-color:#d32f2f;border-radius:50%;animation:gira 1s linear infinite}@keyframes gira{to{transform:rotate(360deg)}}#visoreFoto{display:none;position:fixed;inset:0;background:#000e;z-index:3500;align-items:center;justify-content:center;cursor:zoom-out}#visoreFoto img{max-width:96vw;max-height:94vh;border-radius:6px}.piede-pagina{text-align:center;font-size:.75em;color:#9ca3af;margin-top:18px}.passi{counter-reset:p;list-style:none;padding:0;margin:8px 0 0}.passi li{counter-increment:p;position:relative;padding:6px 0 6px 34px;font-size:.92em}.passi li::before{content:counter(p);position:absolute;left:0;top:5px;width:24px;height:24px;border-radius:50%;background:#fdeaea;color:#d32f2f;font-weight:800;font-size:.8em;display:flex;align-items:center;justify-content:center}#areaStampa{display:none}.foglio-etichette{display:grid;grid-template-columns:repeat(2,90mm);gap:4mm;justify-content:center}.etichetta{width:90mm;height:52mm;box-sizing:border-box;border:1px dashed #999;padding:3mm;display:flex;gap:3mm;align-items:center;break-inside:avoid;font-family:Arial,sans-serif;color:#000;background:#fff}.etichetta .qr svg{width:42mm;height:42mm;display:block}.etichetta .testi{flex:1;min-width:0}.etichetta .ente{font-size:6.5pt;font-weight:700;color:#c62828;text-transform:uppercase;letter-spacing:.03em;border-bottom:1.5px solid #c62828;padding-bottom:1mm;margin-bottom:1.5mm}.etichetta .cod{font-size:15pt;font-weight:800;letter-spacing:.02em;word-break:break-all}.etichetta .tip{font-size:8.5pt;font-weight:700;margin-top:1mm}.etichetta .ubi{font-size:7pt;margin-top:1mm;color:#333}.etichetta .istr{font-size:6.5pt;margin-top:2mm;color:#333}@media print{body{background:#fff;padding:0}body>*:not(#areaStampa){display:none!important}#areaStampa{display:block!important}@page{size:A4;margin:10mm}}@media(max-width:820px){.finestra{top:0;bottom:0;width:100vw;border-radius:0}.fg-corpo.due{grid-template-columns:minmax(0,1fr);padding:14px 16px}.fg-testa,.fg-piede{padding-left:16px;padding-right:16px}}@media(max-width:560px){.griglia-2{grid-template-columns:minmax(0,1fr)}.container>div:not(.header){padding:0 14px 18px}.header{padding:16px 14px}body{padding:12px 8px}.tab-btn{padding:8px 10px;font-size:.88em}}</style> </head> <body> <div class="container" id="mainContainer"> <div class="header"> <img src="https://i.ibb.co/Mk8ZCyj0/2026-04-29-13-08-40-ANASSIMANDRO-CORPO-MILITARE-C-R-I.jpg" class="logo" alt="Croce Rossa Italiana - Corpo Militare"> <button class="btn-admin-small" id="btnApriLogin" onclick="mostraLogin()">Accesso referenti</button> <h2>PRESIDI SANITARI<br>V CENTRO MOBILITAZIONE VENETO</h2> </div> <div id="bannerProva" class="banner-prova" style="display:none;margin:0 24px 14px">VERSIONE DI PROVA - i dati possono essere cancellati e le mail arrivano solo all'amministratore</div> <div id="sch-home" class="schermata"> <div class="sezione"> <div class="sez-titolo"><span class="num">i</span> Come si usa</div> <ol class="passi"> <li>Inquadra con la fotocamera del telefono il <b>QR code</b> sulla custodia del DAE, del fialario o dello zaino.</li> <li>Si apre la <b>scheda del presidio</b>: stato di pronto uso, foto del contenuto, scadenze. Non serve aprire i sigilli.</li> <li>Tocca <b>Esegui il check di pronto uso</b> e compila la checklist: bastano pochi secondi.</li> </ol> <p class="sez-nota" style="margin:10px 0 0">Se qualcosa non va usa <b>Segnala un'anomalia</b> dalla scheda: il referente della UT viene avvisato subito.</p> </div> <button class="btn-secondario" onclick="mostraLogin()">🔐 ACCESSO REFERENTI E UFFICIO SANITÀ</button> <div class="piede-pagina" id="piedeVersione"></div> </div> <div id="sch-scheda" class="schermata" style="display:none"> <div id="schedaCorpo"><div class="vuoto" style="text-align:center">Caricamento della scheda...</div></div> </div> <div id="sch-check" class="schermata" style="display:none"> <h3 class="titolo-schermata" style="color:#2e7d32">✅ CHECK DI PRONTO USO</h3> <div class="sezione" style="text-align:center;padding:10px 14px"><b id="checkCodice"></b> <span id="checkTipo" style="color:#555"></span></div> <div class="sezione"> <div class="sez-titolo"><span class="num">1</span> I tuoi dati</div> <label>Grado</label><input type="text" id="c_grado" placeholder="es. Serg."> <div class="griglia-2"> <div><label>Nome *</label><input type="text" id="c_nome" autocomplete="off" oninput="suggerisciPersona('c_')"></div> <div><label>Cognome *</label><input type="text" id="c_cognome" autocomplete="off" oninput="suggerisciPersona('c_')"></div> </div> <div id="sugg_c_" class="sugg-persone"></div> <label>Email *</label><input type="email" id="c_email" placeholder="nome.cognome@cm.cri.it"> <label class="save-row"><input type="checkbox" id="c_ricorda" checked> Ricorda i miei dati su questo dispositivo</label> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">2</span> Perché lo controlli</div> <select id="c_contesto"></select> <label>Servizio o attività (facoltativo)</label><input type="text" id="c_servizio" placeholder="es. assistenza gara podistica"> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">3</span> Sigilli</div> <p class="sez-nota">Leggi il numero stampato sul sigillo, <b>senza aprirlo</b>.</p> <div id="c_sigilli"></div> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">4</span> Checklist</div> <button type="button" class="btn-tutto-ok" onclick="tuttoOk()">✓ È tutto in ordine: segna tutto OK</button> <div id="c_voci"></div> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">5</span> Foto e note</div> <p class="sez-nota" id="c_notaFoto">Facoltative. Obbligatoria almeno una foto se segnali un problema su una voce contrassegnata.</p> <div class="foto-btns"> <label>📷 Scatta foto<input type="file" accept="image/*" capture="environment" onchange="aggiungiFoto(this,'check')"></label> <label>🖼️ Dalla galleria<input type="file" accept="image/*" multiple onchange="aggiungiFoto(this,'check')"></label> </div> <div id="anteprime-check" class="anteprime"></div> <label>Note (facoltative)</label><textarea id="c_note" placeholder="Qualcosa da segnalare al referente?"></textarea> </div> <button id="btnInviaCheck" class="btn-principale" onclick="inviaCheck()">REGISTRA IL CHECK</button> <button class="btn-secondario" onclick="tornaScheda()">ANNULLA</button> </div> <div id="sch-esito" class="schermata" style="display:none"> <div id="esitoCorpo"></div> <button class="btn-secondario" onclick="tornaScheda(true)">TORNA ALLA SCHEDA</button> </div> <div id="sch-anomalia" class="schermata guasto-ui" style="display:none"> <h3 class="titolo-schermata" style="color:#e65100">⚠️ SEGNALA UN'ANOMALIA</h3> <div class="sezione" style="text-align:center;padding:10px 14px"><b id="anomCodice"></b> <span id="anomTipoPresidio" style="color:#555"></span></div> <div class="sezione"> <div class="sez-titolo"><span class="num">1</span> Che cosa succede</div> <div class="chip-scelta" id="a_tipi"></div> <label>Descrizione *</label> <textarea id="a_descrizione" placeholder="Cosa hai notato? Se il presidio è stato usato: in che servizio e cosa è stato consumato."></textarea> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">2</span> Chi segnala</div> <label>Grado</label><input type="text" id="a_grado" placeholder="es. Serg."> <div class="griglia-2"> <div><label>Nome *</label><input type="text" id="a_nome" autocomplete="off" oninput="suggerisciPersona('a_')"></div> <div><label>Cognome *</label><input type="text" id="a_cognome" autocomplete="off" oninput="suggerisciPersona('a_')"></div> </div> <div id="sugg_a_" class="sugg-persone"></div> <label>Email per la ricevuta (facoltativa)</label><input type="email" id="a_email" placeholder="nome.cognome@cm.cri.it"> </div> <div class="sezione"> <div class="sez-titolo"><span class="num">3</span> Foto</div> <p class="sez-nota">Facoltative, fino a 8.</p> <div class="foto-btns"> <label>📷 Scatta foto<input type="file" accept="image/*" capture="environment" onchange="aggiungiFoto(this,'anom')"></label> <label>🖼️ Dalla galleria<input type="file" accept="image/*" multiple onchange="aggiungiFoto(this,'anom')"></label> </div> <div id="anteprime-anom" class="anteprime"></div> </div> <button id="btnInviaAnom" class="btn-guasto" onclick="inviaAnomalia()">INVIA SEGNALAZIONE</button> <button class="btn-secondario" onclick="tornaScheda()">ANNULLA</button> </div> <div id="sch-login" class="schermata" style="display:none"> <form id="formLogin" method="post" action="#" autocomplete="on" onsubmit="eseguiLogin(); return false;"> <div class="sezione"> <h3 class="titolo-schermata" style="color:#d32f2f">🔐 Accesso riservato</h3> <label for="adminUser">Nome utente</label><input type="text" id="adminUser" name="username" autocomplete="username" autocapitalize="none" spellcheck="false"> <label for="adminPass">Password</label><input type="password" id="adminPass" name="password" autocomplete="current-password"> <label class="save-row"><input type="checkbox" id="ricordaUtente"> Ricorda il mio nome utente su questo dispositivo</label> <p style="font-size:.78em;color:#777;margin:4px 0 0">Per la password usa il salvataggio del browser. Non farlo su PC condivisi.</p> </div> <button type="submit" class="btn-principale">ACCEDI AL PANNELLO</button> </form> <div style="text-align:right;margin-top:8px"><a href="#" onclick="passwordDimenticata();return false;" style="font-size:.85em;color:#1976d2">Password dimenticata?</a></div> <button class="btn-secondario" onclick="tornaHome()">ANNULLA</button> </div> <div id="sch-password" class="schermata" style="display:none"> <div class="sezione" id="pwCorpo"><i>Verifica del link...</i></div> </div> <div id="sch-dashboard" class="schermata" style="display:none"> <div class="barra-utente"> <span>👤 Collegato come <b id="nomeUtenteCollegato"></b> <span id="ruoloUtente" style="color:#6b7280"></span></span> <span style="display:flex;gap:6px;flex-wrap:wrap"> <button id="btnUtenti" onclick="apriUtenti()" style="display:none">👥 Utenti</button> <button id="btnImpostazioni" onclick="apriImpostazioni()" style="display:none">⚙️ Impostazioni</button> <button id="btnRegistro" onclick="apriRegistro()" style="display:none">📜 Registro attività</button> <button onclick="apriCambioPassword()">🔑 Password</button> <button onclick="esci()">Esci</button> </span> </div> <div class="kpi-griglia" id="kpi"></div> <div class="tab-bar"> <button id="tab-presidi" class="tab-btn attivo" onclick="mostraTab('presidi')">🩺 Presidi</button> <button id="tab-scadenze" class="tab-btn" onclick="mostraTab('scadenze')">⏳ Scadenze</button> <button id="tab-controlli" class="tab-btn" onclick="mostraTab('controlli')">✅ Controlli</button> <button id="tab-segnalazioni" class="tab-btn" onclick="mostraTab('segnalazioni')">⚠️ Segnalazioni<span id="badgeSegn"></span></button> </div> <div id="pan-presidi" class="pannello"> <div class="box-ricerca"> <div class="grid-ricerca"> <div><label>Cerca</label><input type="text" id="f_testo" placeholder="codice, ubicazione, targa..." oninput="disegnaPresidi()"></div> <div><label>UT</label><select id="f_ut" onchange="disegnaPresidi()"></select></div> <div><label>Tipo</label><select id="f_tipo" onchange="disegnaPresidi()"></select></div> <div><label>Stato</label><select id="f_stato" onchange="disegnaPresidi()"></select></div> </div> </div> <div class="barra-azioni"> <button class="btn-az verde" id="btnNuovoPresidio" onclick="apriNuovoPresidio()">➕ Nuovo presidio</button> <button class="btn-az viola" onclick="apriEtichette()">🏷️ Etichette QR</button> <button class="btn-az chiaro" onclick="caricaDashboard()">🔄 Aggiorna</button> </div> <div style="overflow-x:auto"><table class="table-dashboard" id="tabPresidi"></table></div> </div> <div id="pan-scadenze" class="pannello" style="display:none"> <div class="box-ricerca"><div class="grid-ricerca"> <div><label>Scadenze entro</label><select id="s_giorni" onchange="caricaScadenze()"> <option value="30">30 giorni</option><option value="60">60 giorni</option><option value="90" selected>90 giorni</option><option value="180">6 mesi</option><option value="365">1 anno</option> </select></div> </div></div> <div style="overflow-x:auto"><table class="table-dashboard" id="tabScadenze"></table></div> </div> <div id="pan-controlli" class="pannello" style="display:none"> <div class="box-ricerca"><div class="grid-ricerca"> <div><label>Presidio</label><input type="text" id="k_codice" placeholder="es. DAE-PD"></div> <div><label>UT</label><select id="k_ut"></select></div> <div><label>Esito</label><select id="k_esito"><option value="">Tutti</option><option value="PRONTO">Pronto uso</option><option value="RISERVA">Con riserva</option><option value="NON_IDONEO">Non idoneo</option></select></div> <div><label>Dal</label><input type="date" id="k_da"></div> <div><label>Al</label><input type="date" id="k_a"></div> </div> <div class="barra-azioni" style="margin-top:10px"><button class="btn-az" onclick="caricaControlli()">🔍 Cerca</button></div></div> <div style="overflow-x:auto"><table class="table-dashboard" id="tabControlli"></table></div> </div> <div id="pan-segnalazioni" class="pannello" style="display:none"> <div class="box-ricerca"><div class="grid-ricerca"> <div><label>Mostra</label><select id="g_stato" onchange="caricaSegnalazioni()"><option value="APERTE">Aperte e in carico</option><option value="">Tutte</option><option value="CHIUSA">Chiuse</option></select></div> </div></div> <div style="overflow-x:auto"><table class="table-dashboard" id="tabSegnalazioni"></table></div> </div> </div> </div> <div class="velo" id="velo"></div> <div class="finestra" id="finestra" style="display:none"> <div class="fg-testa"><h3 id="finTitolo"></h3><button class="chiudi" onclick="chiudiFinestra()" aria-label="Chiudi">✕</button></div> <div class="fg-corpo" id="finCorpo"></div> <div class="fg-piede" id="finPiede"></div> </div> <div id="visoreFoto" onclick="this.style.display='none'"><img id="visoreImg" alt="Foto"></div> <div id="customAlertOverlay"><div class="custom-alert-popup"><div id="customAlertMessage"></div><button class="btn-chiudi-alert" onclick="chiudiAvviso()">OK</button></div></div> <div id="customConfirmOverlay"><div class="custom-confirm-popup"><div id="customConfirmMessage"></div><button class="btn-confirm-yes" onclick="rispostaConferma(true)">CONFERMA</button><button class="btn-confirm-no" onclick="rispostaConferma(false)">ANNULLA</button></div></div> <div class="attesa" id="attesa"><div class="rotella"></div><div id="attesaTesto">Attendere...</div></div> <div id="areaStampa"></div> <script src="config.js"></script> <script>
+/** Generatore QR code - Portale Presidi Sanitari - V° Centro di Mobilitazione Veneto
+*  © 2026 Mario Dal Zuffo - Tutti i diritti riservati. */
+(function () {
+'use strict';
+const VERSIONE_MAX = 20;
+const BIT_LIVELLO = { L: 1, M: 0, Q: 3, H: 2 };
+const BLOCCHI = [
+null,
+{ L: [7, 1, 19, 0, 0], M: [10, 1, 16, 0, 0], Q: [13, 1, 13, 0, 0], H: [17, 1, 9, 0, 0] },
+{ L: [10, 1, 34, 0, 0], M: [16, 1, 28, 0, 0], Q: [22, 1, 22, 0, 0], H: [28, 1, 16, 0, 0] },
+{ L: [15, 1, 55, 0, 0], M: [26, 1, 44, 0, 0], Q: [18, 2, 17, 0, 0], H: [22, 2, 13, 0, 0] },
+{ L: [20, 1, 80, 0, 0], M: [18, 2, 32, 0, 0], Q: [26, 2, 24, 0, 0], H: [16, 4, 9, 0, 0] },
+{ L: [26, 1, 108, 0, 0], M: [24, 2, 43, 0, 0], Q: [18, 2, 15, 2, 16], H: [22, 2, 11, 2, 12] },
+{ L: [18, 2, 68, 0, 0], M: [16, 4, 27, 0, 0], Q: [24, 4, 19, 0, 0], H: [28, 4, 15, 0, 0] },
+{ L: [20, 2, 78, 0, 0], M: [18, 4, 31, 0, 0], Q: [18, 2, 14, 4, 15], H: [26, 4, 13, 1, 14] },
+{ L: [24, 2, 97, 0, 0], M: [22, 2, 38, 2, 39], Q: [22, 4, 18, 2, 19], H: [26, 4, 14, 2, 15] },
+{ L: [30, 2, 116, 0, 0], M: [22, 3, 36, 2, 37], Q: [20, 4, 16, 4, 17], H: [24, 4, 12, 4, 13] },
+{ L: [18, 2, 68, 2, 69], M: [26, 4, 43, 1, 44], Q: [24, 6, 19, 2, 20], H: [28, 6, 15, 2, 16] },
+{ L: [20, 4, 81, 0, 0], M: [30, 1, 50, 4, 51], Q: [28, 4, 22, 4, 23], H: [24, 3, 12, 8, 13] },
+{ L: [24, 2, 92, 2, 93], M: [22, 6, 36, 2, 37], Q: [26, 4, 20, 6, 21], H: [28, 7, 14, 4, 15] },
+{ L: [26, 4, 107, 0, 0], M: [22, 8, 37, 1, 38], Q: [24, 8, 20, 4, 21], H: [22, 12, 11, 4, 12] },
+{ L: [30, 3, 115, 1, 116], M: [24, 4, 40, 5, 41], Q: [20, 11, 16, 5, 17], H: [24, 11, 12, 5, 13] },
+{ L: [22, 5, 87, 1, 88], M: [24, 5, 41, 5, 42], Q: [30, 5, 24, 7, 25], H: [24, 11, 12, 7, 13] },
+{ L: [24, 5, 98, 1, 99], M: [28, 7, 45, 3, 46], Q: [24, 15, 19, 2, 20], H: [30, 3, 15, 13, 16] },
+{ L: [28, 1, 107, 5, 108], M: [28, 10, 46, 1, 47], Q: [28, 1, 22, 15, 23], H: [28, 2, 14, 17, 15] },
+{ L: [30, 5, 120, 1, 121], M: [26, 9, 43, 4, 44], Q: [28, 17, 22, 1, 23], H: [28, 2, 14, 19, 15] },
+{ L: [28, 3, 113, 4, 114], M: [26, 3, 44, 11, 45], Q: [26, 17, 21, 4, 22], H: [26, 9, 13, 16, 14] },
+{ L: [28, 3, 107, 5, 108], M: [26, 3, 41, 13, 42], Q: [30, 15, 24, 5, 25], H: [28, 15, 15, 10, 16] }
+];
+const ALLINEAMENTO = [
+null, [], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34],
+[6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62],
+[6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82],
+[6, 30, 58, 86], [6, 34, 62, 90]
+];
+function utf8(testo) {
+const out = [];
+for (let i = 0; i < testo.length; i++) {
+let cp = testo.charCodeAt(i);
+if (cp >= 0xD800 && cp <= 0xDBFF) {
+const succ = i + 1 < testo.length ? testo.charCodeAt(i + 1) : 0;
+if (succ >= 0xDC00 && succ <= 0xDFFF) {
+cp = 0x10000 + ((cp - 0xD800) << 10) + (succ - 0xDC00);
+i++;
+} else {
+cp = 0xFFFD;
+}
+} else if (cp >= 0xDC00 && cp <= 0xDFFF) {
+cp = 0xFFFD;
+}
+if (cp < 0x80) {
+out.push(cp);
+} else if (cp < 0x800) {
+out.push(0xC0 | (cp >> 6), 0x80 | (cp & 0x3F));
+} else if (cp < 0x10000) {
+out.push(0xE0 | (cp >> 12), 0x80 | ((cp >> 6) & 0x3F), 0x80 | (cp & 0x3F));
+} else {
+out.push(0xF0 | (cp >> 18), 0x80 | ((cp >> 12) & 0x3F), 0x80 | ((cp >> 6) & 0x3F), 0x80 | (cp & 0x3F));
+}
+}
+return out;
+}
+const GF_EXP = new Array(512);
+const GF_LOG = new Array(256);
+(function () {
+let x = 1;
+for (let i = 0; i < 255; i++) {
+GF_EXP[i] = x;
+GF_LOG[x] = i;
+x <<= 1;
+if (x & 0x100) x ^= 0x11D;
+}
+for (let i = 255; i < 512; i++) GF_EXP[i] = GF_EXP[i - 255];
+})();
+function gfMul(a, b) {
+if (a === 0 || b === 0) return 0;
+return GF_EXP[GF_LOG[a] + GF_LOG[b]];
+}
+const cacheGeneratori = {};
+function generatore(n) {
+if (cacheGeneratori[n]) return cacheGeneratori[n];
+let g = [1];
+for (let i = 0; i < n; i++) {
+const nuovo = new Array(g.length + 1).fill(0);
+for (let j = 0; j < g.length; j++) {
+nuovo[j] ^= g[j];
+nuovo[j + 1] ^= gfMul(g[j], GF_EXP[i]);
+}
+g = nuovo;
+}
+cacheGeneratori[n] = g;
+return g;
+}
+function correzione(dati, n) {
+const g = generatore(n);
+const resto = new Array(n).fill(0);
+for (let i = 0; i < dati.length; i++) {
+const fattore = dati[i] ^ resto.shift();
+resto.push(0);
+for (let j = 0; j < n; j++) resto[j] ^= gfMul(g[j + 1], fattore);
+}
+return resto;
+}
+function codewordsDati(versione, livello) {
+const b = BLOCCHI[versione][livello];
+return b[1] * b[2] + b[3] * b[4];
+}
+function bitContatore(versione) {
+return versione <= 9 ? 8 : 16;
+}
+function scegliVersione(nByte, livello) {
+for (let v = 1; v <= VERSIONE_MAX; v++) {
+if (4 + bitContatore(v) + 8 * nByte <= codewordsDati(v, livello) * 8) return v;
+}
+const max = Math.floor((codewordsDati(VERSIONE_MAX, livello) * 8 - 4 - 16) / 8);
+throw new Error('Testo troppo lungo per il QR code: ' + nByte + ' byte in UTF-8, ' +
+'il massimo con livello di correzione ' + livello + ' (versione ' + VERSIONE_MAX + ') è ' + max + ' byte.');
+}
+function codificaDati(byteDati, versione, livello) {
+const bit = [];
+const aggiungi = (valore, lunghezza) => {
+for (let i = lunghezza - 1; i >= 0; i--) bit.push((valore >>> i) & 1);
+};
+const capacita = codewordsDati(versione, livello) * 8;
+aggiungi(0x4, 4);
+aggiungi(byteDati.length, bitContatore(versione));
+byteDati.forEach((b) => aggiungi(b, 8));
+aggiungi(0, Math.min(4, capacita - bit.length));
+aggiungi(0, (8 - bit.length % 8) % 8);
+const codewords = [];
+for (let i = 0; i < bit.length; i += 8) {
+let v = 0;
+for (let j = 0; j < 8; j++) v = (v << 1) | bit[i + j];
+codewords.push(v);
+}
+for (let pad = 0xEC; codewords.length < capacita / 8; pad ^= 0xEC ^ 0x11) codewords.push(pad);
+return codewords;
+}
+function aggiungiCorrezione(dati, versione, livello) {
+const b = BLOCCHI[versione][livello];
+const nEc = b[0];
+const blocchiDati = [];
+const blocchiEc = [];
+let pos = 0;
+const gruppi = [[b[1], b[2]], [b[3], b[4]]];
+gruppi.forEach(([quanti, lunghezza]) => {
+for (let i = 0; i < quanti; i++) {
+const blocco = dati.slice(pos, pos + lunghezza);
+pos += lunghezza;
+blocchiDati.push(blocco);
+blocchiEc.push(correzione(blocco, nEc));
+}
+});
+const risultato = [];
+const maxDati = b[3] > 0 ? b[4] : b[2];
+for (let i = 0; i < maxDati; i++) {
+blocchiDati.forEach((blocco) => { if (i < blocco.length) risultato.push(blocco[i]); });
+}
+for (let i = 0; i < nEc; i++) {
+blocchiEc.forEach((blocco) => risultato.push(blocco[i]));
+}
+return risultato;
+}
+function nuovaGriglia(lato, valore) {
+const g = [];
+for (let y = 0; y < lato; y++) g.push(new Array(lato).fill(valore));
+return g;
+}
+function disegnaPatternFissi(mod, funz, versione) {
+const lato = mod.length;
+const imposta = (x, y, scuro) => { mod[y][x] = scuro; funz[y][x] = true; };
+for (let i = 0; i < lato; i++) {
+imposta(6, i, i % 2 === 0);
+imposta(i, 6, i % 2 === 0);
+}
+const ricerca = (cx, cy) => {
+for (let dy = -4; dy <= 4; dy++) {
+for (let dx = -4; dx <= 4; dx++) {
+const x = cx + dx, y = cy + dy;
+if (x < 0 || y < 0 || x >= lato || y >= lato) continue;
+const d = Math.max(Math.abs(dx), Math.abs(dy));
+imposta(x, y, d !== 2 && d !== 4);
+}
+}
+};
+ricerca(3, 3);
+ricerca(lato - 4, 3);
+ricerca(3, lato - 4);
+const pos = ALLINEAMENTO[versione];
+const n = pos.length;
+for (let i = 0; i < n; i++) {
+for (let j = 0; j < n; j++) {
+if ((i === 0 && j === 0) || (i === 0 && j === n - 1) || (i === n - 1 && j === 0)) continue;
+for (let dy = -2; dy <= 2; dy++) {
+for (let dx = -2; dx <= 2; dx++) {
+imposta(pos[i] + dx, pos[j] + dy, Math.max(Math.abs(dx), Math.abs(dy)) !== 1);
+}
+}
+}
+}
+disegnaFormato(mod, funz, 0);
+disegnaVersione(mod, funz, versione);
+}
+function bitFormato(livello, maschera) {
+const dati = (BIT_LIVELLO[livello] << 3) | maschera;
+let resto = dati;
+for (let i = 0; i < 10; i++) resto = (resto << 1) ^ ((resto >>> 9) * 0x537);
+return ((dati << 10) | resto) ^ 0x5412;
+}
+function disegnaFormato(mod, funz, bits) {
+const lato = mod.length;
+const bit = (i) => ((bits >>> i) & 1) === 1;
+const imposta = (x, y, scuro) => { mod[y][x] = scuro; funz[y][x] = true; };
+for (let i = 0; i <= 5; i++) imposta(8, i, bit(i));
+imposta(8, 7, bit(6));
+imposta(8, 8, bit(7));
+imposta(7, 8, bit(8));
+for (let i = 9; i < 15; i++) imposta(14 - i, 8, bit(i));
+for (let i = 0; i < 8; i++) imposta(lato - 1 - i, 8, bit(i));
+for (let i = 8; i < 15; i++) imposta(8, lato - 15 + i, bit(i));
+imposta(8, lato - 8, true);
+}
+function disegnaVersione(mod, funz, versione) {
+if (versione < 7) return;
+let resto = versione;
+for (let i = 0; i < 12; i++) resto = (resto << 1) ^ ((resto >>> 11) * 0x1F25);
+const bits = (versione << 12) | resto;
+const lato = mod.length;
+for (let i = 0; i < 18; i++) {
+const scuro = ((bits >>> i) & 1) === 1;
+const a = lato - 11 + (i % 3);
+const b = Math.floor(i / 3);
+mod[b][a] = scuro; funz[b][a] = true;
+mod[a][b] = scuro; funz[a][b] = true;
+}
+}
+function posizionaDati(mod, funz, codewords) {
+const lato = mod.length;
+const totaleBit = codewords.length * 8;
+let i = 0;
+for (let destra = lato - 1; destra >= 1; destra -= 2) {
+if (destra === 6) destra = 5;
+const versoAlto = ((destra + 1) & 2) === 0;
+for (let k = 0; k < lato; k++) {
+const y = versoAlto ? lato - 1 - k : k;
+for (let j = 0; j < 2; j++) {
+const x = destra - j;
+if (funz[y][x]) continue;
+if (i < totaleBit) {
+mod[y][x] = ((codewords[i >>> 3] >>> (7 - (i & 7))) & 1) === 1;
+i++;
+} else {
+mod[y][x] = false;
+}
+}
+}
+}
+}
+const MASCHERE = [
+(x, y) => (x + y) % 2 === 0,
+(x, y) => y % 2 === 0,
+(x, y) => x % 3 === 0,
+(x, y) => (x + y) % 3 === 0,
+(x, y) => (Math.floor(x / 3) + Math.floor(y / 2)) % 2 === 0,
+(x, y) => (x * y) % 2 + (x * y) % 3 === 0,
+(x, y) => ((x * y) % 2 + (x * y) % 3) % 2 === 0,
+(x, y) => ((x + y) % 2 + (x * y) % 3) % 2 === 0
+];
+function applicaMaschera(mod, funz, m) {
+const f = MASCHERE[m];
+const lato = mod.length;
+for (let y = 0; y < lato; y++) {
+for (let x = 0; x < lato; x++) {
+if (!funz[y][x] && f(x, y)) mod[y][x] = !mod[y][x];
+}
+}
+}
+function penalitaLinea(linea) {
+let p = 0;
+let corsa = 1;
+for (let i = 1; i <= linea.length; i++) {
+if (i < linea.length && linea[i] === linea[i - 1]) {
+corsa++;
+} else {
+if (corsa >= 5) p += 3 + (corsa - 5);
+corsa = 1;
+}
+}
+const est = [false, false, false, false].concat(linea, [false, false, false, false]);
+const nucleo = [true, false, true, true, true, false, true];
+for (let i = 0; i + 7 <= est.length; i++) {
+let ok = true;
+for (let k = 0; k < 7 && ok; k++) ok = est[i + k] === nucleo[k];
+if (!ok) continue;
+const chiari = (da) => {
+if (da < 0 || da + 4 > est.length) return false;
+for (let k = da; k < da + 4; k++) if (est[k]) return false;
+return true;
+};
+if (chiari(i - 4) || chiari(i + 7)) p += 40;
+}
+return p;
+}
+function penalita(mod) {
+const lato = mod.length;
+let p = 0;
+for (let y = 0; y < lato; y++) p += penalitaLinea(mod[y]);
+for (let x = 0; x < lato; x++) {
+const colonna = [];
+for (let y = 0; y < lato; y++) colonna.push(mod[y][x]);
+p += penalitaLinea(colonna);
+}
+for (let y = 0; y < lato - 1; y++) {
+for (let x = 0; x < lato - 1; x++) {
+const c = mod[y][x];
+if (c === mod[y][x + 1] && c === mod[y + 1][x] && c === mod[y + 1][x + 1]) p += 3;
+}
+}
+let scuri = 0;
+for (let y = 0; y < lato; y++) for (let x = 0; x < lato; x++) if (mod[y][x]) scuri++;
+const totale = lato * lato;
+const k = Math.ceil(Math.abs(scuri * 20 - totale * 10) / totale) - 1;
+p += Math.max(0, k) * 10;
+return p;
+}
+function normalizzaLivello(livello) {
+if (livello === undefined || livello === null || livello === '') return 'M';
+const l = String(livello).toUpperCase();
+if (!Object.prototype.hasOwnProperty.call(BIT_LIVELLO, l)) {
+throw new Error('Livello di correzione non valido: "' + livello + '" (usare L, M, Q o H).');
+}
+return l;
+}
+function matrice(testo, livello) {
+const lvl = normalizzaLivello(livello);
+const byteDati = utf8(String(testo === undefined || testo === null ? '' : testo));
+const versione = scegliVersione(byteDati.length, lvl);
+const codewords = aggiungiCorrezione(codificaDati(byteDati, versione, lvl), versione, lvl);
+const lato = versione * 4 + 17;
+const mod = nuovaGriglia(lato, false);
+const funz = nuovaGriglia(lato, false);
+disegnaPatternFissi(mod, funz, versione);
+posizionaDati(mod, funz, codewords);
+let migliore = 0;
+let minPenalita = Infinity;
+for (let m = 0; m < 8; m++) {
+applicaMaschera(mod, funz, m);
+disegnaFormato(mod, funz, bitFormato(lvl, m));
+const p = penalita(mod);
+if (p < minPenalita) {
+minPenalita = p;
+migliore = m;
+}
+applicaMaschera(mod, funz, m);
+}
+applicaMaschera(mod, funz, migliore);
+disegnaFormato(mod, funz, bitFormato(lvl, migliore));
+return mod;
+}
+function svg(testo, opzioni) {
+const o = opzioni || {};
+const m = matrice(testo, o.livello);
+const margine = o.margine === undefined || o.margine === null
+? 4 : Math.max(0, Math.floor(Number(o.margine)) || 0);
+const lato = m.length + margine * 2;
+const dimensione = o.dimensione === undefined || o.dimensione === null
+? lato * 4 : Number(o.dimensione);
+const d = [];
+for (let y = 0; y < m.length; y++) {
+let x = 0;
+while (x < m.length) {
+if (!m[y][x]) { x++; continue; }
+const inizio = x;
+while (x < m.length && m[y][x]) x++;
+const lunghezza = x - inizio;
+d.push('M' + (inizio + margine) + ' ' + (y + margine) + 'h' + lunghezza + 'v1h-' + lunghezza + 'z');
+}
+}
+return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + lato + ' ' + lato + '"' +
+' width="' + dimensione + '" height="' + dimensione + '" shape-rendering="crispEdges">' +
+'<rect width="' + lato + '" height="' + lato + '" fill="#fff"/>' +
+'<path d="' + d.join('') + '" fill="#000"/>' +
+'</svg>';
+}
+const QRCodice = { matrice: matrice, svg: svg };
+if (typeof module !== 'undefined' && module.exports) module.exports = QRCodice;
+if (typeof window !== 'undefined') window.QRCodice = QRCodice;
+})();
+</script> <script>
+/**
+* Portale Presidi Sanitari - V° Centro di Mobilitazione Veneto
+* © 2026 Mario Dal Zuffo - V° Centro di Mobilitazione Veneto (CRI Corpo Militare).
+* Tutti i diritti riservati. Vietati copia, modifica, distribuzione e uso senza
+* autorizzazione scritta dell'autore.
+*/
+'use strict';
+var URL_API = (window.PRESIDI_API && window.PRESIDI_API.indexOf('INSERISCI') < 0 && /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(window.PRESIDI_API)) ? window.PRESIDI_API : '@@URL_API@@';
+var S = {
+config: null, scheda: null, sess: null, utente: null, dash: null, presidio: null,
+risposte: {}, foto: { check: [], anom: [], rip: [] }, controlli: [], segnalazioni: [], scadenze: []
+};
+var ICONE = { PRONTO: '✅', RISERVA: '⚠️', NON_IDONEO: '⛔', DA_VERIFICARE: '🔵', FUORI_SERVIZIO: '⏸️' };
+var ETICHETTE = { PRONTO: 'Pronto uso', RISERVA: 'Con riserva', NON_IDONEO: 'Non idoneo', DA_VERIFICARE: 'Da verificare', FUORI_SERVIZIO: 'Fuori servizio',
+APERTA: 'Aperta', IN_CARICO: 'In carico', CHIUSA: 'Chiusa' };
+var RUOLI = { ADMIN: 'Amministratore', SANITA: 'Ufficio Sanità', REFERENTE: 'Referente UT', LETTORE: 'Sola lettura' };
+var CHIAVE_PERSONA = 'presidi_persona_v1', CHIAVE_UTENTE = 'presidi_utente_v1', CHIAVE_SESSIONE = 'presidi_sessione_v1';
+var LATO_FOTO = 1600, QUALITA_FOTO = 0.75, LATO_MINI = 480, QUALITA_MINI = 0.7;
+function api(fn) {
+var args = Array.prototype.slice.call(arguments, 1);
+return new Promise(function (risolvi, rifiuta) {
+if (!URL_API || URL_API.indexOf('@@') === 0) return rifiuta(new Error('Portale in configurazione: manca l\'indirizzo del server in config.js. Avvisa il Responsabile IT.'));
+fetch(URL_API, { method: 'POST', body: JSON.stringify({ fn: fn, args: args }), headers: { 'Content-Type': 'text/plain;charset=utf-8' } })
+.then(function (r) {
+if (!r.ok) throw new Error('Server non raggiungibile (' + r.status + ').');
+return r.text();
+})
+.then(function (t) {
+var j;
+try { j = JSON.parse(t); } catch (e) { throw new Error('Il server del portale non risponde correttamente: riprova tra poco o avvisa il Responsabile IT.'); }
+if (j.ok) risolvi(j.r); else rifiuta(new Error(j.errore));
+})
+.catch(function (e) {
+rifiuta(new Error(/Failed to fetch|NetworkError|Load failed/i.test(e.message) ? 'Connessione al server non riuscita: controlla la rete e riprova.' : e.message));
+});
+});
+}
+function tok() { return S.sess || ''; }
+function $(id) { return document.getElementById(id); }
+function esc(v) {
+return String(v === null || v === undefined ? '' : v).replace(/[&<>"']/g, function (c) {
+return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+});
+}
+function data(iso) {
+if (!iso) return '';
+var d = /^\d{4}-\d{2}-\d{2}$/.test(iso) ? new Date(iso + 'T12:00:00') : new Date(iso);
+if (isNaN(d)) return '';
+return d.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+function dataOra(iso) {
+if (!iso) return '';
+var d = new Date(iso);
+if (isNaN(d)) return '';
+return data(iso) + ' ' + d.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+}
+function oggiIso(scarto) {
+var d = new Date();
+d.setDate(d.getDate() + (scarto || 0));
+return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+function badge(stato) { return stato ? '<span class="stato-badge st-' + esc(stato) + '">' + esc(ETICHETTE[stato] || stato) + '</span>' : ''; }
+function chipGiorni(g) {
+if (g === null || g === undefined) return '';
+if (g < 0) return '<span class="chip scaduto">scaduto da ' + (-g) + ' gg</span>';
+if (g === 0) return '<span class="chip scaduto">scade oggi</span>';
+if (g <= 30) return '<span class="chip breve">tra ' + g + ' gg</span>';
+if (g <= 90) return '<span class="chip lunga">tra ' + g + ' gg</span>';
+return '<span class="chip ok">tra ' + g + ' gg</span>';
+}
+function maiuscoleIniziali(s) { return String(s || '').toLowerCase().replace(/(^|[\s'-])(\p{L})/gu, function (t, a, b) { return a + b.toUpperCase(); }); }
+function mostra(id) {
+Array.prototype.forEach.call(document.querySelectorAll('.schermata'), function (el) { el.style.display = 'none'; });
+$(id).style.display = 'block';
+$('mainContainer').classList.toggle('container-dashboard', id === 'sch-dashboard');
+$('btnApriLogin').style.display = (id === 'sch-home' || id === 'sch-scheda') ? 'inline-block' : 'none';
+window.scrollTo(0, 0);
+}
+function attesa(on, testo) {
+$('attesaTesto').textContent = testo || 'Attendere...';
+$('attesa').classList.toggle('on', !!on);
+}
+var chiusuraAvviso = null;
+function avviso(msg) {
+return new Promise(function (ok) {
+$('customAlertMessage').textContent = msg;
+$('customAlertOverlay').style.display = 'block';
+chiusuraAvviso = ok;
+});
+}
+function chiudiAvviso() {
+$('customAlertOverlay').style.display = 'none';
+if (chiusuraAvviso) { var f = chiusuraAvviso; chiusuraAvviso = null; f(); }
+}
+var rispostaInAttesa = null;
+function conferma(msg, opzioni) {
+opzioni = opzioni || {};
+return new Promise(function (ok) {
+$('customConfirmMessage').textContent = msg;
+var campo = $('customConfirmInput');
+campo.style.display = opzioni.campo ? 'block' : 'none';
+campo.value = '';
+campo.placeholder = opzioni.segnaposto || '';
+$('customConfirmOverlay').style.display = 'block';
+if (opzioni.campo) setTimeout(function () { campo.focus(); }, 50);
+rispostaInAttesa = ok;
+});
+}
+function rispostaConferma(si) {
+$('customConfirmOverlay').style.display = 'none';
+if (rispostaInAttesa) { var f = rispostaInAttesa; rispostaInAttesa = null; f({ ok: si, testo: $('customConfirmInput').value.trim() }); }
+}
+function erroreApi(e) {
+attesa(false);
+var m = e && e.message ? e.message : String(e);
+if (/Sessione scaduta|Utente disattivato/.test(m)) {
+chiudiFinestra();
+dimenticaSessione();
+return avviso('🔐 ' + m).then(mostraLogin);
+}
+return avviso('❌ ' + m);
+}
+function visore(src) {
+$('visoreImg').src = src;
+$('visoreFoto').style.display = 'flex';
+}
+function apriFinestra(titolo, corpo, piede, opzioni) {
+opzioni = opzioni || {};
+$('finTitolo').innerHTML = titolo;
+$('finCorpo').innerHTML = corpo;
+$('finCorpo').className = 'fg-corpo' + (opzioni.dueColonne ? ' due' : '');
+$('finPiede').innerHTML = piede || '';
+$('finPiede').style.display = piede ? 'flex' : 'none';
+$('finestra').className = 'finestra' + (opzioni.stretta ? ' stretta' : '');
+$('finestra').style.display = 'flex';
+$('velo').style.display = 'block';
+$('finCorpo').scrollTop = 0;
+document.body.classList.add('modale-aperta');
+}
+function chiudiFinestra() {
+$('finestra').style.display = 'none';
+$('velo').style.display = 'none';
+document.body.classList.remove('modale-aperta');
+}
+function scaricaBase64(b64, nome, tipo) {
+var bin = atob(b64), byte = new Uint8Array(bin.length);
+for (var i = 0; i < bin.length; i++) byte[i] = bin.charCodeAt(i);
+var url = URL.createObjectURL(new Blob([byte], { type: tipo }));
+var a = document.createElement('a');
+a.href = url; a.download = nome; document.body.appendChild(a); a.click();
+setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 2000);
+}
+window.addEventListener('load', avvio);
+function avvio() {
+var campo = document.createElement('textarea');
+campo.id = 'customConfirmInput';
+campo.style.cssText = 'display:none;min-height:70px;margin:-8px 0 16px';
+var popup = document.querySelector('.custom-confirm-popup');
+popup.insertBefore(campo, popup.querySelector('.btn-confirm-yes'));
+var q = new URLSearchParams(location.search);
+try { var s = JSON.parse(sessionStorage.getItem(CHIAVE_SESSIONE) || 'null'); if (s && s.t) { S.sess = s.t; S.utente = s.u; } } catch (e) {  }
+mostra(q.get('p') ? 'sch-scheda' : 'sch-home');
+var config = api('getConfigPubblica').then(function (c) {
+S.config = c;
+$('bannerProva').style.display = c.prova ? 'block' : 'none';
+$('piedeVersione').textContent = 'Versione ' + c.versione + (c.prova ? ' - prova' : '');
+return c;
+});
+if (q.get('action') === 'password' && q.get('t')) {
+config.catch(function () {});
+return apriLinkPassword(q.get('t'));
+}
+if (q.get('p')) {
+config.catch(function () {});
+return apriScheda(q.get('p'));
+}
+if (S.sess) entraPannello();
+config.catch(erroreApi);
+}
+function tornaHome() {
+history.replaceState(null, '', location.pathname);
+if (S.sess) return entraPannello();
+mostra('sch-home');
+}
+function apriScheda(token) {
+mostra('sch-scheda');
+$('schedaCorpo').innerHTML = '<div class="vuoto" style="text-align:center;padding:30px 0">Caricamento della scheda...</div>';
+return api('getSchedaPresidio', token).then(function (s) {
+S.scheda = s;
+disegnaScheda();
+}).catch(function (e) {
+$('schedaCorpo').innerHTML = '<div class="stato-grande st-NON_IDONEO"><span class="ico">❓</span><div>QR NON RICONOSCIUTO<small>' + esc(e.message) + '</small></div></div>' +
+'<button class="btn-secondario" onclick="tornaHome()">VAI ALLA PAGINA INIZIALE</button>';
+});
+}
+function disegnaScheda() {
+var s = S.scheda;
+var h = '<div class="scheda-testa"><div class="tipo">' + esc(s.nomeTipo) + '</div><div class="codice">' + esc(s.codice) + '</div>' +
+'<div class="ubic">UT ' + esc(s.ut) + (s.ubicazione ? ' · ' + esc(s.ubicazione) : '') + (s.targa ? ' · 🚑 ' + esc(s.targa) : '') + '</div></div>';
+h += '<div class="stato-grande st-' + esc(s.stato) + '"><span class="ico">' + (ICONE[s.stato] || '') + '</span><div>' + esc(String(s.etichettaStato).toUpperCase()) +
+(s.motivoStato ? '<small>' + esc(s.motivoStato) + '</small>' : '') + '</div></div>';
+h += '<div class="sezione"><div class="info-righe">' +
+'<div>Ultimo check</div><div>' + (s.ultimoCheck ? dataOra(s.ultimoCheck) + ' ' + badge(s.esitoUltimoCheck) : 'mai') +
+(s.checkScaduto && s.stato !== 'FUORI_SERVIZIO' ? ' <span class="chip breve">da rifare</span>' : '') + '</div>' +
+'<div>Ultima chiusura</div><div>' + (s.ultimaChiusura ? data(s.ultimaChiusura) : 'non ancora sigillato nel portale') + '</div>' +
+'<div>Prossima scadenza</div><div>' + (s.prossima ? esc(s.prossima.articolo) + ' - ' + data(s.prossima.scadenza) + ' ' + chipGiorni(s.prossima.giorni) : 'nessuna registrata') + '</div>' +
+(s.modello ? '<div>Modello</div><div>' + esc(s.modello) + '</div>' : '') + '</div></div>';
+h += '<div class="sezione"><div class="sez-titolo">📷 Contenuto all\'ultima chiusura</div>';
+if (s.foto.length) {
+h += '<p class="sez-nota" style="margin-left:0">Foto scattate il ' + data(s.ultimaChiusura) + ' prima di sigillare. Se il sigillo è integro e il numero corrisponde, il contenuto è questo. Tocca una foto per ingrandirla.</p><div class="anteprime">' +
+s.foto.map(function (f) { return '<div class="anteprima"><img src="' + f.thumb + '" alt="Foto del contenuto" onclick="fotoPubblica(\'' + esc(f.id) + '\')"></div>'; }).join('') + '</div>';
+} else {
+h += '<div class="vuoto">Nessuna foto: il presidio non è ancora stato sigillato con il portale.</div>';
+}
+h += '</div>';
+h += '<div class="sezione"><div class="sez-titolo">📋 Elenco del contenuto</div>';
+if (s.contenuto.length) {
+h += '<table class="tab-contenuto"><tr><th>Articolo</th><th>Q.tà</th><th>Scadenza</th></tr>' + s.contenuto.map(function (v) {
+return '<tr><td>' + esc(v.articolo) + '</td><td>' + esc(v.quantita) + '</td><td>' + (v.scadenza ? data(v.scadenza) + '<br>' + chipGiorni(v.giorni) : '-') + '</td></tr>';
+}).join('') + '</table>';
+} else h += '<div class="vuoto">Elenco non ancora compilato.</div>';
+h += '</div>';
+if (s.stato === 'FUORI_SERVIZIO') {
+h += '<div class="sezione" style="text-align:center"><b>Presidio fuori servizio: non va preso in carico.</b></div>';
+} else {
+h += '<button class="btn-principale" onclick="apriCheck()">✅ ESEGUI IL CHECK DI PRONTO USO</button>';
+}
+h += '<button class="btn-guasto secondario" onclick="apriAnomalia()">⚠️ SEGNALA UN\'ANOMALIA</button>';
+$('schedaCorpo').innerHTML = h;
+}
+function fotoPubblica(id) {
+attesa(true, 'Apertura della foto...');
+api('getFotoPresidio', S.scheda.token, id).then(function (src) { attesa(false); visore(src); }).catch(erroreApi);
+}
+function tornaScheda(ricarica) {
+if (ricarica && S.scheda) return apriScheda(S.scheda.token);
+mostra('sch-scheda');
+}
+function caricaPersona(pre) {
+var p = {};
+try { p = JSON.parse(localStorage.getItem(CHIAVE_PERSONA) || '{}'); } catch (e) {  }
+['grado', 'nome', 'cognome', 'email'].forEach(function (k) { var el = $(pre + k); if (el && p[k] && !el.value) el.value = p[k]; });
+}
+function salvaPersona(pre) {
+try {
+localStorage.setItem(CHIAVE_PERSONA, JSON.stringify({ grado: $(pre + 'grado').value.trim(), nome: $(pre + 'nome').value.trim(), cognome: $(pre + 'cognome').value.trim(), email: $(pre + 'email').value.trim() }));
+} catch (e) {  }
+}
+function leggiPersona(pre) {
+return { grado: $(pre + 'grado').value.trim(), nome: $(pre + 'nome').value.trim(), cognome: $(pre + 'cognome').value.trim(), email: $(pre + 'email').value.trim() };
+}
+var timerSugg = null, numeroSugg = 0;
+function suggerisciPersona(pre) {
+var box = $('sugg_' + pre);
+if (!S.config || !S.config.anagraficaAttiva) return;
+clearTimeout(timerSugg);
+var c = $(pre + 'cognome').value.trim(), n = $(pre + 'nome').value.trim();
+if (c.replace(/\s/g, '').length < 3) { box.style.display = 'none'; return; }
+timerSugg = setTimeout(function () {
+var mio = ++numeroSugg;
+api('cercaPersonale', c + (n ? ' ' + n : '')).then(function (r) {
+if (mio !== numeroSugg) return;
+var l = (r && r.risultati) || [];
+if (!l.length || (l.length === 1 && l[0].cognome.toLowerCase() === c.toLowerCase() && l[0].nome.toLowerCase() === n.toLowerCase())) { box.style.display = 'none'; return; }
+box.innerHTML = '<div class="tit">Sei tu? Tocca il tuo nome per compilare i dati come sono registrati:</div>' + l.map(function (p, i) {
+return '<button type="button" data-i="' + i + '">' + esc((p.grado ? maiuscoleIniziali(p.grado) + ' ' : '') + maiuscoleIniziali(p.cognome) + ' ' + maiuscoleIniziali(p.nome)) + '</button>';
+}).join('');
+Array.prototype.forEach.call(box.querySelectorAll('button'), function (b) {
+b.onclick = function () {
+var p = l[Number(b.getAttribute('data-i'))];
+if (p.grado) $(pre + 'grado').value = maiuscoleIniziali(p.grado);
+$(pre + 'cognome').value = maiuscoleIniziali(p.cognome);
+$(pre + 'nome').value = maiuscoleIniziali(p.nome);
+box.style.display = 'none';
+};
+});
+box.style.display = 'block';
+}).catch(function () { box.style.display = 'none'; });
+}, 350);
+}
+function ridimensiona(img, lato, qualita) {
+var w = img.naturalWidth, h = img.naturalHeight, k = Math.min(1, lato / Math.max(w, h));
+var c = document.createElement('canvas');
+c.width = Math.round(w * k); c.height = Math.round(h * k);
+var x = c.getContext('2d');
+x.fillStyle = '#fff'; x.fillRect(0, 0, c.width, c.height);
+x.drawImage(img, 0, 0, c.width, c.height);
+return c.toDataURL('image/jpeg', qualita);
+}
+function preparaFoto(file) {
+return new Promise(function (ok, ko) {
+var url = URL.createObjectURL(file), img = new Image();
+img.onload = function () {
+try { ok({ full: ridimensiona(img, LATO_FOTO, QUALITA_FOTO), thumb: ridimensiona(img, LATO_MINI, QUALITA_MINI) }); } catch (e) { ko(e); }
+URL.revokeObjectURL(url);
+};
+img.onerror = function () { URL.revokeObjectURL(url); ko(new Error('Formato della foto non supportato.')); };
+img.src = url;
+});
+}
+function aggiungiFoto(input, chiave) {
+var file = Array.prototype.slice.call(input.files || []);
+input.value = '';
+var max = (S.config && S.config.maxFoto) || 8;
+var posto = max - S.foto[chiave].length;
+if (!file.length) return;
+if (posto <= 0) return avviso('Puoi allegare al massimo ' + max + ' foto.');
+attesa(true, 'Preparazione delle foto...');
+Promise.all(file.slice(0, posto).map(preparaFoto)).then(function (l) {
+S.foto[chiave] = S.foto[chiave].concat(l);
+attesa(false);
+disegnaAnteprime(chiave);
+if (file.length > posto) avviso('Ho aggiunto solo ' + posto + ' foto: il massimo è ' + max + '.');
+}).catch(erroreApi);
+}
+function disegnaAnteprime(chiave) {
+$('anteprime-' + chiave).innerHTML = S.foto[chiave].map(function (f, i) {
+return '<div class="anteprima"><img src="' + f.thumb + '" alt="Foto ' + (i + 1) + '" onclick="visore(S.foto.' + chiave + '[' + i + '].full)">' +
+'<button type="button" onclick="S.foto.' + chiave + '.splice(' + i + ',1);disegnaAnteprime(\'' + chiave + '\')" aria-label="Togli">✕</button></div>';
+}).join('');
+}
+function apriCheck() {
+var s = S.scheda;
+$('checkCodice').textContent = s.codice;
+$('checkTipo').textContent = '· ' + s.nomeTipo;
+caricaPersona('c_');
+$('c_contesto').innerHTML = '<option value="">Scegli...</option>' + (S.config ? S.config.contesti : []).map(function (c) { return '<option>' + esc(c) + '</option>'; }).join('');
+if (s.sigilliRegistrati) {
+$('c_sigilli').innerHTML = s.puntiSigillo.map(function (p, i) {
+return '<label>Numero del sigillo - ' + esc(p) + ' *</label><input type="text" id="sig_' + i + '" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="es. 001234">';
+}).join('');
+} else {
+$('c_sigilli').innerHTML = '<div class="vuoto">Questo presidio non è ancora stato sigillato con il portale: il check sarà registrato con riserva.</div>';
+}
+S.risposte = {};
+$('c_voci').innerHTML = s.checklist.map(function (v) {
+return '<div class="voce" id="voce_' + esc(v.id) + '"><div class="testo">' + esc(v.voce) + (v.obbligatoria ? ' <span class="obbl">*</span>' : '') +
+(v.fotoSeKO ? ' <span title="Se KO serve una foto">📷</span>' : '') + '</div><div class="scelte">' +
+'<button type="button" data-e="OK" onclick="scegli(\'' + esc(v.id) + '\',\'OK\')">✓ OK</button>' +
+'<button type="button" data-e="KO" onclick="scegli(\'' + esc(v.id) + '\',\'KO\')">✗ KO</button>' +
+(v.obbligatoria ? '' : '<button type="button" data-e="NA" onclick="scegli(\'' + esc(v.id) + '\',\'NA\')">— N.A.</button>') +
+'</div><textarea id="nota_' + esc(v.id) + '" placeholder="Cosa non va? *"></textarea></div>';
+}).join('');
+S.foto.check = [];
+disegnaAnteprime('check');
+$('c_note').value = '';
+$('c_servizio').value = '';
+mostra('sch-check');
+}
+function scegli(id, esito) {
+S.risposte[id] = esito;
+var el = $('voce_' + id);
+Array.prototype.forEach.call(el.querySelectorAll('.scelte button'), function (b) {
+b.className = b.getAttribute('data-e') === esito ? 'sel-' + esito : '';
+});
+el.classList.toggle('ko', esito === 'KO');
+if (esito === 'KO') setTimeout(function () { $('nota_' + id).focus(); }, 30);
+}
+function tuttoOk() { S.scheda.checklist.forEach(function (v) { scegli(v.id, 'OK'); }); }
+function inviaCheck() {
+var s = S.scheda, p = leggiPersona('c_');
+if (!p.nome || !p.cognome || !p.email) return avviso('⚠️ Compila nome, cognome ed email.');
+var contesto = $('c_contesto').value;
+if (!contesto) return avviso('⚠️ Scegli perché stai controllando il presidio.');
+var sigilli = {};
+if (s.sigilliRegistrati) {
+for (var i = 0; i < s.puntiSigillo.length; i++) {
+var n = $('sig_' + i).value.trim();
+if (!n) return avviso('⚠️ Scrivi il numero del sigillo: ' + s.puntiSigillo[i] + '.');
+sigilli[s.puntiSigillo[i]] = n;
+}
+}
+var voci = [], serveFoto = false;
+for (var j = 0; j < s.checklist.length; j++) {
+var v = s.checklist[j], e = S.risposte[v.id];
+if (!e) return avviso('⚠️ Rispondi a tutte le voci della checklist.\nManca: ' + v.voce);
+var nota = $('nota_' + v.id).value.trim();
+if (e === 'KO' && !nota) return avviso('⚠️ Per "' + v.voce + '" scrivi cosa non va.');
+if (e === 'KO' && v.fotoSeKO) serveFoto = true;
+voci.push({ id: v.id, esito: e, nota: e === 'KO' ? nota : '' });
+}
+if (serveFoto && !S.foto.check.length) return avviso('📷 Aggiungi almeno una foto dell\'anomalia.');
+var b = $('btnInviaCheck');
+b.disabled = true;
+attesa(true, 'Registrazione del check...');
+api('salvaCheck', {
+token: s.token, persona: p, contesto: contesto, servizio: $('c_servizio').value.trim(), sigilli: sigilli,
+voci: voci, note: $('c_note').value.trim(), foto: S.foto.check
+}).then(function (r) {
+attesa(false);
+if ($('c_ricorda').checked) salvaPersona('c_');
+disegnaEsito(r);
+}).catch(erroreApi).then(function () { b.disabled = false; });
+}
+function disegnaEsito(r) {
+var colori = { PRONTO: 'st-PRONTO', RISERVA: 'st-RISERVA', NON_IDONEO: 'st-NON_IDONEO' };
+$('esitoCorpo').innerHTML = '<div class="esito-box stato-grande ' + (colori[r.esito] || '') + '" style="display:block">' +
+'<div class="ico">' + (ICONE[r.esito] || '') + '</div><div class="tit">' + esc(String(r.etichetta).toUpperCase()) + '</div>' +
+'<div style="font-weight:600;font-size:.8em;letter-spacing:0">' + esc(r.messaggio) + '</div>' +
+(r.motivi && r.motivi.length ? '<ul style="font-weight:500;letter-spacing:0">' + r.motivi.map(function (m) { return '<li>' + esc(m) + '</li>'; }).join('') + '</ul>' : '') + '</div>';
+mostra('sch-esito');
+}
+function apriAnomalia() {
+var s = S.scheda;
+$('anomCodice').textContent = s.codice;
+$('anomTipoPresidio').textContent = '· ' + s.nomeTipo;
+var tipi = (S.config && S.config.tipiSegnalazione) || {};
+$('a_tipi').innerHTML = Object.keys(tipi).map(function (k) {
+return '<label><input type="radio" name="a_tipo" value="' + esc(k) + '"><span>' + esc(tipi[k]) + '</span></label>';
+}).join('');
+caricaPersona('a_');
+$('a_descrizione').value = '';
+S.foto.anom = [];
+disegnaAnteprime('anom');
+mostra('sch-anomalia');
+}
+function inviaAnomalia() {
+var tipo = document.querySelector('input[name=a_tipo]:checked');
+if (!tipo) return avviso('⚠️ Scegli che cosa succede.');
+var descr = $('a_descrizione').value.trim();
+if (descr.length < 5) return avviso('⚠️ Descrivi l\'anomalia in poche parole.');
+var p = leggiPersona('a_');
+if (!p.nome || !p.cognome) return avviso('⚠️ Scrivi nome e cognome.');
+var b = $('btnInviaAnom');
+b.disabled = true;
+attesa(true, 'Invio della segnalazione...');
+api('salvaSegnalazione', { token: S.scheda.token, tipo: tipo.value, persona: p, descrizione: descr, foto: S.foto.anom }).then(function (msg) {
+attesa(false);
+return avviso('✅ ' + msg).then(function () { tornaScheda(true); });
+}).catch(erroreApi).then(function () { b.disabled = false; });
+}
+function mostraLogin() {
+history.replaceState(null, '', location.pathname);
+if (S.sess) return entraPannello();
+try { var u = localStorage.getItem(CHIAVE_UTENTE); if (u) { $('adminUser').value = u; $('ricordaUtente').checked = true; } } catch (e) {  }
+mostra('sch-login');
+setTimeout(function () { ($('adminUser').value ? $('adminPass') : $('adminUser')).focus(); }, 50);
+}
+function eseguiLogin() {
+var u = $('adminUser').value.trim(), p = $('adminPass').value;
+if (!u || !p) return avviso('⚠️ Inserisci nome utente e password.');
+attesa(true, 'Accesso...');
+api('loginAdmin', u, p).then(function (r) {
+attesa(false);
+S.sess = r.token;
+S.utente = r.utente;
+try {
+sessionStorage.setItem(CHIAVE_SESSIONE, JSON.stringify({ t: r.token, u: r.utente }));
+if ($('ricordaUtente').checked) localStorage.setItem(CHIAVE_UTENTE, u); else localStorage.removeItem(CHIAVE_UTENTE);
+} catch (e) {  }
+try { if (window.PasswordCredential && navigator.credentials) navigator.credentials.store(new PasswordCredential({ id: u, password: p, name: u })).catch(function () {}); } catch (e) {  }
+$('adminPass').value = '';
+entraPannello();
+}).catch(erroreApi);
+}
+function passwordDimenticata() {
+var u = $('adminUser').value.trim();
+if (!u) return avviso('Scrivi il tuo nome utente nel campo qui sopra, poi tocca di nuovo "Password dimenticata?".');
+attesa(true);
+api('richiediResetPassword', u).then(function (m) { attesa(false); avviso('📧 ' + m); }).catch(erroreApi);
+}
+function dimenticaSessione() {
+S.sess = null; S.utente = null; S.dash = null;
+try { sessionStorage.removeItem(CHIAVE_SESSIONE); } catch (e) {  }
+}
+function esci() {
+if (S.sess) api('logoutAdmin', S.sess).catch(function () {});
+dimenticaSessione();
+chiudiFinestra();
+mostra('sch-home');
+}
+function apriLinkPassword(t) {
+mostra('sch-password');
+api('infoLinkPassword', t).then(function (info) {
+if (!info.valido) {
+$('pwCorpo').innerHTML = '<h3 class="titolo-schermata" style="color:#d32f2f">🔑 Link non valido</h3><p>Il link è scaduto o è già stato usato. Chiedi all\'amministratore di mandartene uno nuovo, oppure usa "Password dimenticata?".</p>' +
+'<button class="btn-secondario" onclick="mostraLogin()">VAI ALL\'ACCESSO</button>';
+return;
+}
+$('pwCorpo').innerHTML = '<h3 class="titolo-schermata" style="color:#d32f2f">🔑 Imposta la password</h3>' +
+'<p style="font-size:.9em">Utente: <b>' + esc(info.username) + '</b>' + (info.nome ? ' (' + esc(info.nome) + ')' : '') + '</p>' +
+'<input type="text" autocomplete="username" value="' + esc(info.username) + '" style="display:none">' +
+'<label>Nuova password</label><input type="password" id="pw1" autocomplete="new-password">' +
+'<label>Ripeti la password</label><input type="password" id="pw2" autocomplete="new-password">' +
+'<p class="sez-nota" style="margin:6px 0 0">Almeno 10 caratteri, con lettere e numeri.</p>' +
+'<button class="btn-principale" style="margin-top:16px" id="btnPw">SALVA LA PASSWORD</button>';
+$('btnPw').onclick = function () {
+var a = $('pw1').value, b = $('pw2').value;
+if (a !== b) return avviso('⚠️ Le due password non coincidono.');
+attesa(true);
+api('impostaPasswordDaLink', t, a).then(function (m) {
+attesa(false);
+$('adminUser').value = info.username;
+return avviso('✅ ' + m).then(mostraLogin);
+}).catch(erroreApi);
+};
+}).catch(function (e) { $('pwCorpo').innerHTML = '<p>' + esc(e.message) + '</p>'; });
+}
+function entraPannello() {
+history.replaceState(null, '', location.pathname);
+var u = S.utente || {};
+$('nomeUtenteCollegato').textContent = u.nome || u.username || '';
+$('ruoloUtente').textContent = '(' + (RUOLI[u.ruolo] || u.ruolo || '') + (u.ruolo === 'REFERENTE' ? ' ' + (u.ut || []).join(', ') : '') + ')';
+$('btnUtenti').style.display = u.ruolo === 'ADMIN' ? 'inline-block' : 'none';
+$('btnImpostazioni').style.display = u.ruolo === 'ADMIN' ? 'inline-block' : 'none';
+$('btnRegistro').style.display = (u.ruolo === 'ADMIN' || u.ruolo === 'SANITA') ? 'inline-block' : 'none';
+$('btnNuovoPresidio').style.display = u.ruolo === 'LETTORE' ? 'none' : 'inline-flex';
+mostra('sch-dashboard');
+mostraTab('presidi');
+caricaDashboard();
+}
+function caricaDashboard() {
+attesa(true, 'Caricamento dei presidi...');
+return api('getDashboard', tok()).then(function (d) {
+attesa(false);
+S.dash = d;
+S.utente = d.utente;
+$('bannerProva').style.display = d.prova ? 'block' : 'none';
+popolaFiltri();
+disegnaKpi();
+disegnaPresidi();
+$('badgeSegn').innerHTML = d.kpi.segnalazioniAperte ? '<span class="badge-conta">' + d.kpi.segnalazioniAperte + '</span>' : '';
+}).catch(erroreApi);
+}
+function opzioni(lista, scelto, tutti) {
+return (tutti ? '<option value="">' + esc(tutti) + '</option>' : '') + lista.map(function (o) {
+var v = typeof o === 'string' ? o : o.v, t = typeof o === 'string' ? o : o.t;
+return '<option value="' + esc(v) + '"' + (String(v) === String(scelto) ? ' selected' : '') + '>' + esc(t) + '</option>';
+}).join('');
+}
+function popolaFiltri() {
+var d = S.dash;
+var utVisibili = (S.utente.ut || []).indexOf('*') >= 0 ? d.ut : S.utente.ut;
+$('f_ut').innerHTML = opzioni(utVisibili, $('f_ut').value, 'Tutte');
+$('k_ut').innerHTML = opzioni(utVisibili, $('k_ut').value, 'Tutte');
+$('f_tipo').innerHTML = opzioni(d.tipi.map(function (t) { return { v: t.tipo, t: t.nome }; }), $('f_tipo').value, 'Tutti');
+$('f_stato').innerHTML = opzioni([{ v: 'PRONTO', t: 'Pronto uso' }, { v: 'RISERVA', t: 'Con riserva' }, { v: 'NON_IDONEO', t: 'Non idoneo' },
+{ v: 'DA_VERIFICARE', t: 'Da verificare' }, { v: 'FUORI_SERVIZIO', t: 'Fuori servizio' }, { v: 'CHECK', t: 'Check da fare' }], $('f_stato').value, 'Tutti');
+}
+function disegnaKpi() {
+var k = S.dash.kpi;
+var schede = [
+['', k.totale, 'Presidi', '', 'filtraStato(\'\')'],
+['verde', k.pronti, 'Pronti all\'uso', '', 'filtraStato(\'PRONTO\')'],
+['giallo', k.riserva, 'Con riserva', '', 'filtraStato(\'RISERVA\')'],
+['rosso', k.nonIdonei, 'Non idonei', '', 'filtraStato(\'NON_IDONEO\')'],
+['blu', k.daVerificare, 'Da verificare', '', 'filtraStato(\'DA_VERIFICARE\')'],
+['giallo', k.scadenze30, 'Scadenze entro 30 gg', '', '$(\'s_giorni\').value=\'30\';mostraTab(\'scadenze\')'],
+['giallo', k.checkScaduti, 'Check da fare', '', 'filtraStato(\'CHECK\')'],
+['rosso', k.segnalazioniAperte, 'Segnalazioni aperte', '', 'mostraTab(\'segnalazioni\')']
+];
+$('kpi').innerHTML = schede.map(function (s) {
+return '<button type="button" class="kpi ' + s[0] + '" onclick="' + s[4] + '"><div class="num">' + s[1] + '</div><div class="lbl">' + esc(s[2]) + '</div></button>';
+}).join('');
+}
+function filtraStato(st) {
+$('f_stato').value = st;
+mostraTab('presidi');
+disegnaPresidi();
+}
+function mostraTab(nome) {
+['presidi', 'scadenze', 'controlli', 'segnalazioni'].forEach(function (t) {
+$('pan-' + t).style.display = t === nome ? 'block' : 'none';
+$('tab-' + t).classList.toggle('attivo', t === nome);
+});
+if (nome === 'scadenze') caricaScadenze();
+if (nome === 'controlli' && !S.controlliCaricati) { S.controlliCaricati = true; caricaControlli(); }
+if (nome === 'segnalazioni') caricaSegnalazioni();
+}
+function presidiFiltrati() {
+if (!S.dash) return [];
+var testo = $('f_testo').value.trim().toLowerCase(), ut = $('f_ut').value, tipo = $('f_tipo').value, st = $('f_stato').value;
+return S.dash.presidi.filter(function (p) {
+if (ut && p.ut !== ut) return false;
+if (tipo && p.tipo !== tipo) return false;
+if (st === 'CHECK' && !p.checkScaduto) return false;
+if (st && st !== 'CHECK' && p.stato !== st) return false;
+if (testo && [p.codice, p.ubicazione, p.targa, p.descrizione, p.referente, p.nomeTipo].join(' ').toLowerCase().indexOf(testo) < 0) return false;
+return true;
+});
+}
+function disegnaPresidi() {
+var l = presidiFiltrati();
+if (!l.length) {
+$('tabPresidi').innerHTML = '<tr><td style="border:none"><div class="vuoto">' + (S.dash && S.dash.presidi.length ? 'Nessun presidio corrisponde ai filtri.' : 'Nessun presidio registrato. Inizia con "Nuovo presidio".') + '</div></td></tr>';
+return;
+}
+$('tabPresidi').innerHTML = '<tr><th>Codice</th><th>Tipo</th><th>UT</th><th>Ubicazione</th><th>Stato</th><th>Ultimo check</th><th>Prossima scadenza</th><th>⚠️</th></tr>' +
+l.map(function (p) {
+return '<tr class="cliccabile" onclick="apriPresidio(\'' + esc(p.id) + '\')"><td style="white-space:nowrap"><b>' + esc(p.codice) + '</b></td><td>' + esc(p.nomeTipo) + '</td><td>' + esc(p.ut) + '</td>' +
+'<td>' + esc(p.ubicazione) + (p.targa ? '<br><small>🚑 ' + esc(p.targa) + '</small>' : '') + '</td>' +
+'<td>' + badge(p.stato) + (p.motivoStato ? '<br><small style="color:#6b7280">' + esc(p.motivoStato) + '</small>' : '') + '</td>' +
+'<td>' + (p.ultimoCheck ? data(p.ultimoCheck) : 'mai') + (p.checkScaduto ? ' <span class="chip breve">da fare</span>' : '') + '</td>' +
+'<td>' + (p.prossima ? esc(p.prossima.articolo) + '<br>' + data(p.prossima.scadenza) + ' ' + chipGiorni(p.prossima.giorni) : '-') + '</td>' +
+'<td>' + (p.segnalazioniAperte ? '<span class="badge-conta">' + p.segnalazioniAperte + '</span>' : '') + '</td></tr>';
+}).join('');
+}
+function apriPresidio(id) {
+attesa(true, 'Apertura del presidio...');
+return api('getPresidio', tok(), id).then(function (p) {
+attesa(false);
+S.presidio = p;
+disegnaPresidio();
+}).catch(erroreApi);
+}
+function campo(etichetta, id, valore, attr) {
+return '<label>' + esc(etichetta) + '</label><input type="text" id="' + id + '" value="' + esc(valore || '') + '"' + (attr || '') + '>';
+}
+function disegnaPresidio() {
+var p = S.presidio, ro = p.puoScrivere ? '' : ' disabled';
+var sx = '<div class="stato-grande st-' + esc(p.stato) + '"><span class="ico">' + (ICONE[p.stato] || '') + '</span><div>' + esc((ETICHETTE[p.stato] || p.stato).toUpperCase()) +
+(p.motivoStato ? '<small>' + esc(p.motivoStato) + '</small>' : '') + '</div></div>';
+sx += '<div class="sezione"><div class="info-righe">' +
+'<div>Ultimo check</div><div>' + (p.ultimoCheck ? dataOra(p.ultimoCheck) + ' ' + badge(p.esitoUltimoCheck) : 'mai') + (p.checkScaduto ? ' <span class="chip breve">da fare</span>' : '') + '</div>' +
+'<div>Ultima chiusura</div><div>' + (p.ultimaChiusura ? dataOra(p.ultimaChiusura) : 'mai sigillato') + '</div>' +
+'<div>Sigilli attuali</div><div>' + (Object.keys(p.sigilliAttuali).length ? Object.keys(p.sigilliAttuali).map(function (k) { return esc(k) + ': <b>' + esc(p.sigilliAttuali[k]) + '</b>'; }).join('<br>') : 'nessuno') + '</div>' +
+'<div>Prossima scadenza</div><div>' + (p.prossima ? esc(p.prossima.articolo) + ' - ' + data(p.prossima.scadenza) + ' ' + chipGiorni(p.prossima.giorni) : '-') + '</div></div></div>';
+sx += '<div class="sezione"><div class="sez-titolo">📷 Foto dell\'ultima chiusura</div>' + (p.foto.length
+? '<div class="anteprime">' + p.foto.map(function (f) { return '<div class="anteprima"><img src="' + f.thumb + '" alt="Foto" onclick="fotoRiservata(\'' + esc(f.id) + '\')"></div>'; }).join('') + '</div>'
+: '<div class="vuoto">Nessuna foto: esegui il ripristino con nuova sigillatura.</div>') + '</div>';
+var svg = '';
+try { svg = QRCodice.svg(p.urlScheda, { margine: 2, dimensione: 110 }); } catch (e) { svg = ''; }
+sx += '<div class="sezione"><div class="sez-titolo">🏷️ QR code</div><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap">' +
+'<div class="qr-mini">' + svg + '</div><div style="font-size:.88em">' +
+'<a href="' + esc(p.urlScheda) + '" target="_blank" rel="noopener">Apri la scheda pubblica</a><br><br>' +
+'<button class="btn-mini" onclick="stampaEtichette([{codice:S.presidio.codice,nomeTipo:S.presidio.nomeTipo,ut:S.presidio.ut,ubicazione:S.presidio.ubicazione,url:S.presidio.urlScheda}])">🖨️ Stampa etichetta</button>' +
+(p.puoScrivere ? '<button class="btn-mini rosso" onclick="rigeneraQrPresidio()">🔁 Nuovo QR</button>' : '') + '</div></div></div>';
+sx += '<div class="sezione"><div class="sez-titolo">✏️ Dati del presidio</div>' +
+'<div class="griglia-2"><div>' + campo('Codice', 'p_codice', p.codice, ro) + '</div><div><label>UT</label><select id="p_ut"' + ro + '>' + opzioni(utScrivibili(), p.ut) + '</select></div></div>' +
+campo('Descrizione', 'p_descrizione', p.descrizione, ro) +
+'<div class="griglia-2"><div>' + campo('Modello', 'p_modello', p.modello, ro) + '</div><div>' + campo('Matricola', 'p_matricola', p.matricola, ro) + '</div></div>' +
+campo('Ubicazione', 'p_ubicazione', p.ubicazione, ro) +
+'<div class="griglia-2"><div>' + campo('Targa del mezzo (se a bordo)', 'p_targa', p.targa, ro) + '</div><div>' + campo('Referente', 'p_referente', p.referente, ro) + '</div></div>' +
+'<div class="griglia-2"><div>' + campo('Punti di sigillo (separati da virgola)', 'p_punti', p.puntiSigillo.join(', '), ro) + '</div><div>' + campo('Codice registrazione 118', 'p_codice118', p.codice118, ro) + '</div></div>' +
+'<label>Note</label><textarea id="p_note"' + ro + '>' + esc(p.note) + '</textarea>' +
+(p.puoScrivere ? '<button class="btn-az" style="margin-top:12px" onclick="salvaDatiPresidio()">💾 Salva i dati</button>' : '') + '</div>';
+var dx = '<div class="sezione"><div class="sez-titolo">📋 Contenuto, lotti e scadenze</div>' +
+'<p class="sez-nota" style="margin-left:0">Le modifiche valgono dal prossimo check. Dopo un reintegro usa il ripristino, che risigilla e scatta le foto.</p>' +
+editorContenuto('edCont', p.contenuto, p.puoScrivere) +
+(p.puoScrivere ? '<div class="barra-azioni" style="margin-top:8px"><button class="btn-az chiaro" onclick="aggiungiRiga(\'edCont\')">➕ Riga</button>' +
+'<button class="btn-az chiaro" onclick="aggiungiDotazione(\'edCont\')">↺ Articoli della dotazione standard</button>' +
+'<button class="btn-az" onclick="salvaContenutoPresidio()">💾 Salva contenuto</button></div>' : '') + '</div>';
+dx += '<div class="sezione"><div class="sez-titolo">✅ Ultimi controlli</div>' + (p.controlli.length ? p.controlli.map(function (c, i) {
+return '<div class="voce-storico" onclick="dettaglioControllo(S.presidio.controlli[' + i + '],true)"><b>' + dataOra(c.dataOra) + '</b> ' + badge(c.esito) +
+'<br>' + esc(c.operatore) + ' · ' + esc(c.contesto) + (c.sigilliOK === 'NO' ? ' · <b style="color:#c62828">sigillo non corrispondente</b>' : '') +
+(c.motivi.length ? '<br><small style="color:#6b7280">' + esc(c.motivi.join('; ')) + '</small>' : '') + '</div>';
+}).join('') : '<div class="vuoto">Nessun controllo.</div>') + '</div>';
+dx += '<div class="sezione"><div class="sez-titolo">🔒 Storico sigilli</div>' + (p.sigilli.length
+? '<div style="overflow-x:auto"><table class="tab-contenuto"><tr><th>Punto</th><th>Numero</th><th>Applicato</th><th>Rimosso / motivo</th></tr>' + p.sigilli.map(function (s) {
+return '<tr><td>' + esc(s.punto) + '</td><td><b>' + esc(s.numero) + '</b></td><td>' + data(s.applicatoIl) + '<br><small>' + esc(s.applicatoDa) + '</small></td><td>' +
+(s.rimossoIl ? data(s.rimossoIl) + '<br><small>' + esc(s.rimossoDa) + ' - ' + esc(s.motivoApertura) + '</small>' : '<span class="chip ok">attivo</span>') + '</td></tr>';
+}).join('') + '</table></div>' : '<div class="vuoto">Nessun sigillo registrato.</div>') + '</div>';
+dx += '<div class="sezione"><div class="sez-titolo">⚠️ Segnalazioni</div>' + (p.segnalazioni.length ? p.segnalazioni.map(function (s, i) {
+return '<div class="voce-storico" onclick="dettaglioSegnalazione(S.presidio.segnalazioni[' + i + '],true)"><b>' + dataOra(s.dataOra) + '</b> ' + badge(s.stato) +
+'<br>' + esc(s.etichettaTipo) + ' · ' + esc(s.segnalatoDa) + '<br><small style="color:#6b7280">' + esc(s.descrizione) + '</small></div>';
+}).join('') : '<div class="vuoto">Nessuna segnalazione.</div>') + '</div>';
+var piede = '<div class="sx"><select id="p_periodo" style="width:auto;margin:0;padding:7px 10px;font-size:.85em">' +
+'<option value="30">Ultimi 30 giorni</option><option value="mese">Mese scorso</option><option value="anno">Anno in corso</option><option value="tutto">Tutto</option></select>' +
+'<button class="btn-az grigio" onclick="registroPdf()">📄 Registro PDF</button></div>';
+if (p.puoScrivere) {
+piede += p.stato === 'FUORI_SERVIZIO'
+? '<button class="btn-az chiaro" onclick="cambiaStato(\'IN_SERVIZIO\')">▶️ Rimetti in servizio</button>'
+: '<button class="btn-az chiaro" onclick="cambiaStato(\'FUORI_SERVIZIO\')">⏸️ Fuori servizio</button>';
+if (S.utente.ruolo === 'ADMIN' || S.utente.ruolo === 'SANITA') piede += '<button class="btn-az chiaro" onclick="cambiaStato(\'DISMESSO\')">🗑️ Dismetti</button>';
+piede += '<button class="btn-az rosso" onclick="apriRipristino()">🔒 Ripristino e nuova sigillatura</button>';
+}
+apriFinestra(esc(p.codice) + ' · ' + esc(p.nomeTipo) + ' ' + badge(p.stato), '<div>' + sx + '</div><div>' + dx + '</div>', piede, { dueColonne: true });
+}
+function utScrivibili() {
+if (!S.dash) return [];
+return (S.utente.ut || []).indexOf('*') >= 0 ? S.dash.ut : S.utente.ut;
+}
+function fotoRiservata(id) {
+attesa(true, 'Apertura della foto...');
+api('getFotoRiservata', tok(), id).then(function (src) { attesa(false); visore(src); }).catch(erroreApi);
+}
+function rigaEditor(r, modificabile) {
+var ro = modificabile ? '' : ' disabled';
+var bordo = r.livello === 'scaduto' ? 'border-color:#c62828;background:#ffebee' : r.livello === 'breve' ? 'border-color:#ef6c00;background:#fff3e0' : '';
+return '<tr data-id="' + esc(r.id || '') + '"><td><input data-c="articolo" value="' + esc(r.articolo || '') + '" placeholder="Articolo"' + ro + '></td>' +
+'<td class="q"><input data-c="quantita" type="number" min="0" step="any" value="' + esc(r.quantita === undefined ? 1 : r.quantita) + '"' + ro + '></td>' +
+'<td class="l"><input data-c="lotto" value="' + esc(r.lotto || '') + '" placeholder="Lotto"' + ro + '></td>' +
+'<td class="d"><input data-c="scadenza" type="date" value="' + esc(r.scadenza || '') + '" style="' + bordo + '"' + ro + '></td>' +
+'<td class="x">' + (modificabile ? '<button type="button" class="btn-mini rosso" onclick="this.closest(\'tr\').remove()" title="Togli">✕</button>' : '') + '</td></tr>';
+}
+function editorContenuto(id, righe, modificabile) {
+return '<div style="overflow-x:auto"><table class="ed-contenuto" id="' + id + '"><thead><tr><th>Articolo</th><th>Q.tà</th><th>Lotto</th><th>Scadenza</th><th></th></tr></thead><tbody>' +
+righe.map(function (r) { return rigaEditor(r, modificabile); }).join('') + '</tbody></table></div>';
+}
+function aggiungiRiga(id, r) {
+$(id).querySelector('tbody').insertAdjacentHTML('beforeend', rigaEditor(r || { articolo: '', quantita: 1 }, true));
+if (!r) { var righe = $(id).querySelectorAll('tbody tr'); righe[righe.length - 1].querySelector('input').focus(); }
+}
+function leggiEditor(id) {
+return Array.prototype.map.call($(id).querySelectorAll('tbody tr'), function (tr) {
+var o = { id: tr.getAttribute('data-id') || '' };
+Array.prototype.forEach.call(tr.querySelectorAll('input'), function (i) { o[i.getAttribute('data-c')] = i.value.trim(); });
+return o;
+}).filter(function (r) { return r.articolo || r.lotto || r.scadenza; });
+}
+function aggiungiDotazione(id) {
+attesa(true);
+api('getDotazioneStandard', tok(), S.presidio.tipo).then(function (l) {
+attesa(false);
+var presenti = leggiEditor(id).map(function (r) { return r.articolo.toLowerCase(); });
+var aggiunti = 0;
+l.forEach(function (d) {
+if (presenti.indexOf(String(d.articolo).toLowerCase()) < 0) { aggiungiRiga(id, { articolo: d.articolo, quantita: d.quantita }); aggiunti++; }
+});
+avviso(aggiunti ? 'Aggiunti ' + aggiunti + ' articoli della dotazione standard: completa lotti e scadenze.' : 'Ci sono già tutti gli articoli della dotazione standard.');
+}).catch(erroreApi);
+}
+function salvaContenutoPresidio() {
+attesa(true, 'Salvataggio del contenuto...');
+api('salvaContenuto', tok(), S.presidio.id, leggiEditor('edCont')).then(function (m) {
+attesa(false);
+avviso('✅ ' + m);
+apriPresidio(S.presidio.id);
+caricaDashboard();
+}).catch(erroreApi);
+}
+function salvaDatiPresidio() {
+var dati = {
+id: S.presidio.id, codice: $('p_codice').value, ut: $('p_ut').value, descrizione: $('p_descrizione').value, modello: $('p_modello').value,
+matricola: $('p_matricola').value, ubicazione: $('p_ubicazione').value, targa: $('p_targa').value, referente: $('p_referente').value,
+puntiSigillo: $('p_punti').value, codice118: $('p_codice118').value, note: $('p_note').value
+};
+attesa(true, 'Salvataggio...');
+api('salvaPresidio', tok(), dati).then(function (r) {
+attesa(false);
+avviso('✅ ' + r.messaggio);
+apriPresidio(r.id);
+caricaDashboard();
+}).catch(erroreApi);
+}
+function cambiaStato(azione) {
+var domanda = { FUORI_SERVIZIO: 'Mettere il presidio fuori servizio? Scrivi il motivo (facoltativo).', IN_SERVIZIO: 'Rimettere il presidio in servizio? Tornerà "da verificare" finché non lo risigilli.',
+DISMESSO: 'Dismettere definitivamente il presidio? Sparirà dagli elenchi. Scrivi il motivo.' }[azione];
+conferma(domanda, { campo: azione !== 'IN_SERVIZIO', segnaposto: 'Motivo' }).then(function (r) {
+if (!r.ok) return;
+attesa(true);
+api('impostaStatoPresidio', tok(), S.presidio.id, azione, r.testo).then(function () {
+attesa(false);
+caricaDashboard();
+if (azione === 'DISMESSO') chiudiFinestra(); else apriPresidio(S.presidio.id);
+}).catch(erroreApi);
+});
+}
+function rigeneraQrPresidio() {
+conferma('Generare un nuovo QR code? L\'etichetta attuale smetterà di funzionare e andrà sostituita.').then(function (r) {
+if (!r.ok) return;
+attesa(true);
+api('rigeneraQr', tok(), S.presidio.id).then(function (x) { attesa(false); avviso('✅ ' + x.messaggio); apriPresidio(S.presidio.id); }).catch(erroreApi);
+});
+}
+function registroPdf() {
+var v = $('p_periodo').value, oggi = new Date(), da, a = oggiIso(0);
+if (v === '30') da = oggiIso(-30);
+else if (v === 'anno') da = oggi.getFullYear() + '-01-01';
+else if (v === 'tutto') da = '2020-01-01';
+else {
+var primo = new Date(oggi.getFullYear(), oggi.getMonth() - 1, 1), ultimo = new Date(oggi.getFullYear(), oggi.getMonth(), 0);
+da = primo.getFullYear() + '-' + String(primo.getMonth() + 1).padStart(2, '0') + '-01';
+a = ultimo.getFullYear() + '-' + String(ultimo.getMonth() + 1).padStart(2, '0') + '-' + String(ultimo.getDate()).padStart(2, '0');
+}
+attesa(true, 'Preparazione del PDF...');
+api('generaReportPresidio', tok(), S.presidio.id, da, a).then(function (r) {
+attesa(false);
+scaricaBase64(r.base64, r.nome, 'application/pdf');
+}).catch(erroreApi);
+}
+function apriRipristino() {
+var p = S.presidio, motivi = (S.config && S.config.motiviApertura) || [];
+var minimo = (S.config && S.config.fotoMinChiusura) || 0;
+S.foto.rip = [];
+var c = '<div class="sezione"><div class="sez-titolo"><span class="num">1</span> Perché è stato aperto</div>' +
+'<select id="r_motivo">' + opzioni(motivi, p.stato === 'NON_IDONEO' ? motivi[0] : (p.ultimaChiusura ? '' : 'Prima sigillatura'), 'Scegli...') + '</select>' +
+'<label>Dettaglio (facoltativo)</label><input type="text" id="r_dettaglio" placeholder="es. usato nel servizio del 12/11, piastre consumate"></div>';
+c += '<div class="sezione"><div class="sez-titolo"><span class="num">2</span> Contenuto dopo il reintegro</div>' +
+'<p class="sez-nota" style="margin-left:0">Controlla quantità, lotti e scadenze di ciò che hai rimesso dentro.</p>' + editorContenuto('edRip', p.contenuto, true) +
+'<div class="barra-azioni" style="margin-top:8px"><button class="btn-az chiaro" onclick="aggiungiRiga(\'edRip\')">➕ Riga</button></div></div>';
+c += '<div class="sezione"><div class="sez-titolo"><span class="num">3</span> Foto del contenuto prima di chiudere</div>' +
+'<p class="sez-nota" style="margin-left:0">Almeno ' + minimo + ': una d\'insieme e una per scomparto. Saranno quelle mostrate a chi scansiona il QR.</p>' +
+'<div class="foto-btns"><label>📷 Scatta foto<input type="file" accept="image/*" capture="environment" onchange="aggiungiFoto(this,\'rip\')"></label>' +
+'<label>🖼️ Dalla galleria<input type="file" accept="image/*" multiple onchange="aggiungiFoto(this,\'rip\')"></label></div><div id="anteprime-rip" class="anteprime"></div></div>';
+c += '<div class="sezione"><div class="sez-titolo"><span class="num">4</span> Nuovi sigilli</div>' + p.puntiSigillo.map(function (pt, i) {
+return '<label>Numero del nuovo sigillo - ' + esc(pt) + ' *</label><input type="text" id="r_sig_' + i + '" autocomplete="off" autocapitalize="characters" spellcheck="false">';
+}).join('') + '<label>Note</label><textarea id="r_note" style="min-height:60px"></textarea>' +
+'<label class="save-row"><input type="checkbox" id="r_chiudi" checked> Chiudi le segnalazioni aperte su questo presidio</label></div>';
+apriFinestra('🔒 Ripristino e sigillatura · ' + esc(p.codice), c,
+'<div class="sx"><button class="btn-az chiaro" onclick="disegnaPresidio()">← Indietro</button></div><button class="btn-az rosso" onclick="confermaRipristino()">CONFERMA LA SIGILLATURA</button>', { stretta: true });
+}
+function confermaRipristino() {
+var p = S.presidio, minimo = (S.config && S.config.fotoMinChiusura) || 0;
+var motivo = $('r_motivo').value;
+if (!motivo) return avviso('⚠️ Scegli perché il presidio è stato aperto.');
+var sigilli = {};
+for (var i = 0; i < p.puntiSigillo.length; i++) {
+var n = $('r_sig_' + i).value.trim();
+if (!n) return avviso('⚠️ Scrivi il numero del nuovo sigillo: ' + p.puntiSigillo[i] + '.');
+sigilli[p.puntiSigillo[i]] = n;
+}
+if (S.foto.rip.length < minimo) return avviso('📷 Servono almeno ' + minimo + ' foto del contenuto.');
+var contenuto = leggiEditor('edRip');
+conferma('Confermi la sigillatura di ' + p.codice + ' con ' + Object.keys(sigilli).map(function (k) { return k + ' ' + sigilli[k]; }).join(', ') + '?').then(function (r) {
+if (!r.ok) return;
+attesa(true, 'Registrazione della sigillatura e invio delle foto...');
+api('ripristinaPresidio', tok(), {
+id: p.id, motivo: motivo, dettaglio: $('r_dettaglio').value.trim(), sigilli: sigilli, contenuto: contenuto,
+foto: S.foto.rip, note: $('r_note').value.trim(), chiudiSegnalazioni: $('r_chiudi').checked
+}).then(function (x) {
+attesa(false);
+S.foto.rip = [];
+avviso((x.stato === 'PRONTO' ? '✅ ' : '⚠️ ') + x.messaggio);
+apriPresidio(p.id);
+caricaDashboard();
+}).catch(erroreApi);
+});
+}
+function apriNuovoPresidio() {
+var d = S.dash;
+var c = '<div class="griglia-2"><div><label>Tipo *</label><select id="n_tipo">' + opzioni(d.tipi.map(function (t) { return { v: t.tipo, t: t.nome }; }), '', 'Scegli...') + '</select></div>' +
+'<div><label>UT *</label><select id="n_ut">' + opzioni(utScrivibili(), '', 'Scegli...') + '</select></div></div>' +
+campo('Codice (vuoto = automatico, es. DAE-PD-03)', 'n_codice', '') + campo('Descrizione', 'n_descrizione', '') +
+'<div class="griglia-2"><div>' + campo('Modello', 'n_modello', '') + '</div><div>' + campo('Matricola', 'n_matricola', '') + '</div></div>' +
+campo('Ubicazione', 'n_ubicazione', '', ' placeholder="es. Sede UT - armadio sanitario"') +
+'<div class="griglia-2"><div>' + campo('Targa del mezzo (se a bordo)', 'n_targa', '') + '</div><div>' + campo('Referente', 'n_referente', '') + '</div></div>' +
+campo('Codice registrazione 118 (solo DAE)', 'n_codice118', '') +
+'<p class="sez-nota" style="margin:12px 0 0">Il contenuto viene precompilato con la dotazione standard del tipo. Dopo il salvataggio completa lotti e scadenze ed esegui la prima sigillatura.</p>';
+apriFinestra('➕ Nuovo presidio', c, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Annulla</button><button class="btn-az verde" onclick="creaPresidio()">Crea il presidio</button>', { stretta: true });
+}
+function creaPresidio() {
+var dati = {};
+['tipo', 'ut', 'codice', 'descrizione', 'modello', 'matricola', 'ubicazione', 'targa', 'referente', 'codice118'].forEach(function (k) { dati[k] = $('n_' + k).value; });
+if (!dati.tipo || !dati.ut) return avviso('⚠️ Scegli tipo e UT.');
+attesa(true, 'Creazione...');
+api('salvaPresidio', tok(), dati).then(function (r) {
+attesa(false);
+caricaDashboard();
+avviso('✅ ' + r.messaggio).then(function () { apriPresidio(r.id); });
+}).catch(erroreApi);
+}
+function apriEtichette() {
+var l = presidiFiltrati();
+if (!l.length) return avviso('Nessun presidio nell\'elenco: cambia i filtri.');
+var c = '<p class="sez-nota" style="margin:0 0 10px">Foglio A4, 10 etichette da 90 × 52 mm. Stampa su carta adesiva resistente o plastifica prima di applicare sulla custodia (mai sul sigillo).</p>' +
+'<div class="barra-azioni"><button class="btn-mini" onclick="selezionaEtichette(true)">Seleziona tutti</button><button class="btn-mini" onclick="selezionaEtichette(false)">Nessuno</button></div>' +
+l.map(function (p) {
+return '<label class="save-row" style="display:flex;margin-top:8px"><input type="checkbox" class="sel-et" value="' + esc(p.id) + '" checked> <b>' + esc(p.codice) + '</b> · ' + esc(p.nomeTipo) + ' · ' + esc(p.ubicazione) + '</label>';
+}).join('');
+apriFinestra('🏷️ Etichette QR', c, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button><button class="btn-az viola" onclick="stampaSelezionate()">🖨️ Stampa</button>', { stretta: true });
+}
+function selezionaEtichette(si) { Array.prototype.forEach.call(document.querySelectorAll('.sel-et'), function (c) { c.checked = si; }); }
+function stampaSelezionate() {
+var ids = Array.prototype.filter.call(document.querySelectorAll('.sel-et'), function (c) { return c.checked; }).map(function (c) { return c.value; });
+if (!ids.length) return avviso('Seleziona almeno un presidio.');
+attesa(true, 'Preparazione delle etichette...');
+api('getEtichette', tok(), ids).then(function (l) { attesa(false); stampaEtichette(l); }).catch(erroreApi);
+}
+function stampaEtichette(lista) {
+$('areaStampa').innerHTML = '<div class="foglio-etichette">' + lista.map(function (e) {
+var svg = QRCodice.svg(e.url, { margine: 2, livello: 'M' });
+return '<div class="etichetta"><div class="qr">' + svg + '</div><div class="testi"><div class="ente">CRI Corpo Militare · V CdM Veneto</div>' +
+'<div class="cod">' + esc(e.codice) + '</div><div class="tip">' + esc(e.nomeTipo) + '</div><div class="ubi">UT ' + esc(e.ut) + (e.ubicazione ? ' · ' + esc(e.ubicazione) : '') + '</div>' +
+'<div class="istr">Inquadra il QR per la scheda di pronto uso e il check. Non serve aprire i sigilli.</div></div></div>';
+}).join('') + '</div>';
+setTimeout(function () { window.print(); }, 150);
+}
+function caricaScadenze() {
+$('tabScadenze').innerHTML = '<tr><td style="border:none"><div class="vuoto">Caricamento...</div></td></tr>';
+api('getScadenze', tok(), $('s_giorni').value).then(function (l) {
+S.scadenze = l;
+if (!l.length) { $('tabScadenze').innerHTML = '<tr><td style="border:none"><div class="vuoto">Nessuna scadenza nel periodo scelto.</div></td></tr>'; return; }
+$('tabScadenze').innerHTML = '<tr><th>Scadenza</th><th>Mancano</th><th>Articolo</th><th>Lotto</th><th>Q.tà</th><th>Presidio</th><th>UT</th><th>Ubicazione</th></tr>' + l.map(function (s) {
+return '<tr class="cliccabile" onclick="apriPresidio(\'' + esc(s.presidioId) + '\')"><td><b>' + data(s.scadenza) + '</b></td><td>' + chipGiorni(s.giorni) + '</td><td>' + esc(s.articolo) +
+(s.critico ? ' <span class="chip avviso" title="Se scade il presidio diventa non idoneo">critico</span>' : '') + '</td><td>' + esc(s.lotto) + '</td><td>' + esc(s.quantita) +
+'</td><td><b>' + esc(s.codice) + '</b></td><td>' + esc(s.ut) + '</td><td>' + esc(s.ubicazione) + '</td></tr>';
+}).join('');
+}).catch(erroreApi);
+}
+function caricaControlli() {
+$('tabControlli').innerHTML = '<tr><td style="border:none"><div class="vuoto">Caricamento...</div></td></tr>';
+api('getControlli', tok(), { codice: $('k_codice').value, ut: $('k_ut').value, esito: $('k_esito').value, da: $('k_da').value, a: $('k_a').value }).then(function (l) {
+S.controlli = l;
+if (!l.length) { $('tabControlli').innerHTML = '<tr><td style="border:none"><div class="vuoto">Nessun controllo trovato.</div></td></tr>'; return; }
+$('tabControlli').innerHTML = '<tr><th>Data</th><th>Presidio</th><th>Operatore</th><th>Motivo</th><th>Sigilli</th><th>Esito</th><th>Rilievi</th></tr>' + l.map(function (c, i) {
+return '<tr class="cliccabile" onclick="dettaglioControllo(S.controlli[' + i + '])"><td>' + dataOra(c.dataOra) + '</td><td><b>' + esc(c.codice) + '</b></td><td>' + esc(c.operatore) +
+(c.inAnagrafica === 'NO' ? ' <span class="chip breve">non in anagrafica</span>' : '') + '</td><td>' + esc(c.contesto) + '</td><td>' +
+(c.sigilliOK === 'NO' ? '<b style="color:#c62828">non corrispondente</b>' : c.sigilliOK === 'NUOVI' ? 'nuovi' : c.sigilliOK === 'SI' ? 'ok' : '-') + '</td><td>' + badge(c.esito) +
+'</td><td><small>' + esc(c.motivi.join('; ')) + '</small>' + (c.foto.length ? ' 📷' : '') + '</td></tr>';
+}).join('');
+}).catch(erroreApi);
+}
+function miniatureRiservate(lista, idBox) {
+lista.forEach(function (f, i) {
+api('getFotoRiservata', tok(), f.t).then(function (src) {
+var box = $(idBox);
+if (box) box.insertAdjacentHTML('beforeend', '<div class="anteprima"><img src="' + src + '" alt="Foto ' + (i + 1) + '" onclick="fotoRiservata(\'' + esc(f.f) + '\')"></div>');
+}).catch(function () {});
+});
+}
+function dettaglioControllo(c, daPresidio) {
+var h = '<div class="info-righe" style="margin-bottom:12px">' +
+'<div>Data e ora</div><div>' + dataOra(c.dataOra) + '</div><div>Presidio</div><div>' + esc(c.codice) + ' (UT ' + esc(c.ut) + ')</div>' +
+'<div>Operatore</div><div>' + esc(c.operatore) + (c.email ? ' - ' + esc(c.email) : '') + (c.inAnagrafica === 'NO' ? ' <span class="chip breve">non in anagrafica</span>' : '') + '</div>' +
+'<div>Motivo</div><div>' + esc(c.contesto) + (c.servizio ? ' - ' + esc(c.servizio) : '') + '</div>' +
+'<div>Sigilli</div><div>' + (Object.keys(c.sigilliLetti).map(function (k) { return esc(k) + ': ' + esc(c.sigilliLetti[k]); }).join(', ') || '-') +
+(c.sigilliOK === 'NO' ? ' <b style="color:#c62828">NON CORRISPONDENTE</b>' : '') + '</div><div>Esito</div><div>' + badge(c.esito) + '</div>' +
+(c.registratoDa && c.registratoDa !== 'QR' ? '<div>Registrato da</div><div>' + esc(c.registratoDa) + '</div>' : '') + '</div>';
+if (c.voci.length) {
+h += '<table class="tab-contenuto">' + c.voci.map(function (v) {
+var col = v.esito === 'OK' ? '#2e7d32' : v.esito === 'KO' ? '#c62828' : '#607d8b';
+return '<tr><td>' + esc(v.voce) + (v.nota ? '<br><small style="color:#c62828">' + esc(v.nota) + '</small>' : '') + '</td><td style="color:' + col + ';font-weight:700;width:50px">' + esc(v.esito) + '</td></tr>';
+}).join('') + '</table>';
+}
+if (c.motivi.length) h += '<p><b>Rilievi:</b><br>' + c.motivi.map(esc).join('<br>') + '</p>';
+if (c.note) h += '<p><b>Note:</b> ' + esc(c.note) + '</p>';
+if (c.foto.length) h += '<div class="anteprime" id="fotoCtrl"></div>';
+apriFinestra('✅ Controllo ' + esc(c.codice), h, daPresidio ? '<div class="sx"><button class="btn-az chiaro" onclick="disegnaPresidio()">← Torna al presidio</button></div>' : '<button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button>', { stretta: true });
+if (c.foto.length) miniatureRiservate(c.foto, 'fotoCtrl');
+}
+function caricaSegnalazioni() {
+$('tabSegnalazioni').innerHTML = '<tr><td style="border:none"><div class="vuoto">Caricamento...</div></td></tr>';
+api('getSegnalazioni', tok(), { stato: $('g_stato').value }).then(function (l) {
+S.segnalazioni = l;
+if (!l.length) { $('tabSegnalazioni').innerHTML = '<tr><td style="border:none"><div class="vuoto">Nessuna segnalazione.</div></td></tr>'; return; }
+$('tabSegnalazioni').innerHTML = '<tr><th>Data</th><th>Presidio</th><th>Tipo</th><th>Segnalato da</th><th>Descrizione</th><th>Stato</th></tr>' + l.map(function (s, i) {
+return '<tr class="cliccabile" onclick="dettaglioSegnalazione(S.segnalazioni[' + i + '])"><td>' + dataOra(s.dataOra) + '</td><td><b>' + esc(s.codice) + '</b></td><td>' + esc(s.etichettaTipo) +
+'</td><td>' + esc(s.segnalatoDa) + (s.inAnagrafica === 'NO' ? ' <span class="chip breve">non in anagrafica</span>' : '') + '</td><td>' + esc(s.descrizione) + (s.foto.length ? ' 📷' : '') +
+'</td><td>' + badge(s.stato) + '</td></tr>';
+}).join('');
+}).catch(erroreApi);
+}
+function dettaglioSegnalazione(s, daPresidio) {
+var h = '<div class="info-righe" style="margin-bottom:12px"><div>Data</div><div>' + dataOra(s.dataOra) + '</div><div>Presidio</div><div>' + esc(s.codice) + ' (UT ' + esc(s.ut) + ')</div>' +
+'<div>Tipo</div><div>' + esc(s.etichettaTipo) + '</div><div>Segnalato da</div><div>' + esc(s.segnalatoDa) + (s.email ? ' - ' + esc(s.email) : '') + '</div>' +
+'<div>Stato</div><div>' + badge(s.stato) + (s.chiusaIl ? ' il ' + data(s.chiusaIl) + ' da ' + esc(s.chiusaDa) : '') + '</div></div>' +
+'<div class="sezione" style="white-space:pre-wrap">' + esc(s.descrizione) + '</div>';
+if (s.foto.length) h += '<div class="anteprime" id="fotoSegn" style="margin-bottom:12px"></div>';
+if (s.diario.length) h += '<div class="diario-lista">' + s.diario.map(function (d) {
+return '<div class="diario-voce"><span class="quando">' + dataOra(d.quando) + '</span> <span class="chi">' + esc(d.chi) + '</span><div>' + esc(d.testo) + '</div></div>';
+}).join('') + '</div>';
+if (S.utente.ruolo !== 'LETTORE') {
+h += '<div class="sezione"><div class="sez-titolo">Aggiorna</div><label>Stato</label><select id="sg_stato">' +
+opzioni([{ v: 'APERTA', t: 'Aperta' }, { v: 'IN_CARICO', t: 'In carico' }, { v: 'CHIUSA', t: 'Chiusa' }], s.stato) + '</select>' +
+'<label>Nota</label><textarea id="sg_nota" style="min-height:60px" placeholder="es. materiale ordinato all\'Ufficio Sanità"></textarea>' +
+'<button class="btn-az" style="margin-top:10px" id="btnSg">💾 Salva</button></div>';
+}
+var piede = (daPresidio ? '<div class="sx"><button class="btn-az chiaro" onclick="disegnaPresidio()">← Torna al presidio</button></div>' : '<div class="sx"><button class="btn-az chiaro" onclick="apriPresidio(\'' + esc(s.presidioId) + '\')">Apri il presidio</button></div><button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button>');
+apriFinestra('⚠️ Segnalazione ' + esc(s.codice), h, piede, { stretta: true });
+if (s.foto.length) miniatureRiservate(s.foto, 'fotoSegn');
+if ($('btnSg')) $('btnSg').onclick = function () {
+attesa(true);
+api('aggiornaSegnalazione', tok(), s.id, { stato: $('sg_stato').value, nota: $('sg_nota').value }).then(function (m) {
+attesa(false);
+avviso('✅ ' + m);
+if (daPresidio) apriPresidio(S.presidio.id); else { chiudiFinestra(); caricaSegnalazioni(); }
+caricaDashboard();
+}).catch(erroreApi);
+};
+}
+function apriUtenti() {
+attesa(true);
+api('getUtenti', tok()).then(function (l) {
+attesa(false);
+S.utentiElenco = l;
+var h = '<div style="overflow-x:auto"><table class="table-dashboard"><tr><th>Utente</th><th>Nome</th><th>Email</th><th>Ruolo</th><th>UT</th><th>Ultimo accesso</th><th></th></tr>' + l.map(function (u, i) {
+return '<tr' + (u.attivo ? '' : ' style="opacity:.5"') + '><td><b>' + esc(u.username) + '</b>' + (u.attivo ? '' : '<br><small>disattivato</small>') + '</td><td>' + esc(u.nome) + '</td><td>' + esc(u.email) +
+'</td><td>' + esc(RUOLI[u.ruolo] || u.ruolo) + '</td><td>' + esc(u.ut) + '</td><td>' + (u.ultimoAccesso ? dataOra(u.ultimoAccesso) : (u.passwordImpostata ? '-' : '<span class="chip breve">password da impostare</span>')) +
+'</td><td><button class="btn-mini" onclick="formUtente(S.utentiElenco[' + i + '])">✏️</button><button class="btn-mini" onclick="linkPasswordUtente(\'' + esc(u.username) + '\')">🔑 Link</button></td></tr>';
+}).join('') + '</table></div><div id="formUtente"></div><div id="boxLink"></div>';
+apriFinestra('👥 Utenti del pannello', h, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button><button class="btn-az verde" onclick="formUtente(null)">➕ Nuovo utente</button>');
+}).catch(erroreApi);
+}
+function formUtente(u) {
+var ut = (u && u.ut ? u.ut.split(',') : []);
+var h = '<div class="sezione" style="margin-top:16px"><div class="sez-titolo">' + (u ? 'Modifica ' + esc(u.username) : 'Nuovo utente') + '</div>' +
+'<div class="griglia-2"><div><label>Nome utente *</label><input id="u_username" value="' + esc(u ? u.username : '') + '"' + (u ? ' disabled' : '') + ' placeholder="es. mario.rossi" autocapitalize="none"></div>' +
+'<div><label>Nome e cognome</label><input id="u_nome" value="' + esc(u ? u.nome : '') + '"></div></div>' +
+'<label>Email (riceve il link per la password e gli avvisi)</label><input id="u_email" type="email" value="' + esc(u ? u.email : '') + '">' +
+'<label>Ruolo *</label><select id="u_ruolo">' + opzioni([{ v: 'REFERENTE', t: 'Referente UT - gestisce i presidi delle sue UT' }, { v: 'SANITA', t: 'Ufficio Sanità - tutte le UT, dotazioni e avvisi' },
+{ v: 'LETTORE', t: 'Sola lettura - vede tutto, non modifica' }, { v: 'ADMIN', t: 'Amministratore - tutto, compresi utenti e impostazioni' }], u ? u.ruolo : 'REFERENTE') + '</select>' +
+'<label>UT (solo per i referenti)</label><div class="chip-scelta">' + S.dash.ut.map(function (x) {
+return '<label><input type="checkbox" class="u_ut" value="' + esc(x) + '"' + (ut.indexOf(x) >= 0 ? ' checked' : '') + '><span>' + esc(x) + '</span></label>';
+}).join('') + '</div>' +
+'<label class="save-row"><input type="checkbox" id="u_attivo"' + (!u || u.attivo ? ' checked' : '') + '> Attivo</label><br>' +
+'<button class="btn-az verde" style="margin-top:12px" onclick="salvaFormUtente(' + (u ? 'true' : 'false') + ')">💾 Salva utente</button></div>';
+$('formUtente').innerHTML = h;
+$('formUtente').scrollIntoView({ behavior: 'smooth' });
+}
+function mostraLink(r) {
+if (!r.link) return;
+$('boxLink').innerHTML = '<div class="sezione" style="background:#f1f8e9"><b>Link per impostare la password</b> (valido 48 ore, usabile una volta):<br>' +
+'<input id="linkPw" readonly value="' + esc(r.link) + '" onclick="this.select()"><button class="btn-mini" style="margin-top:8px" onclick="navigator.clipboard&&navigator.clipboard.writeText($(\'linkPw\').value);this.textContent=\'Copiato\'">📋 Copia</button></div>';
+}
+function salvaFormUtente(modifica) {
+var dati = {
+username: $('u_username').value.trim(), nome: $('u_nome').value.trim(), email: $('u_email').value.trim(), ruolo: $('u_ruolo').value,
+ut: Array.prototype.filter.call(document.querySelectorAll('.u_ut'), function (c) { return c.checked; }).map(function (c) { return c.value; }).join(','),
+attivo: $('u_attivo').checked
+};
+attesa(true);
+api('salvaUtente', tok(), dati).then(function (r) {
+attesa(false);
+return avviso('✅ ' + r.messaggio).then(function () { apriUtenti(); setTimeout(function () { mostraLink(r); }, 400); });
+}).catch(erroreApi);
+}
+function linkPasswordUtente(username) {
+attesa(true);
+api('inviaLinkPasswordUtente', tok(), username).then(function (r) { attesa(false); avviso('✅ ' + r.messaggio); mostraLink(r); }).catch(erroreApi);
+}
+function apriImpostazioni() {
+attesa(true);
+api('getImpostazioni', tok()).then(function (l) {
+attesa(false);
+var h = '<p class="sez-nota" style="margin:0 0 8px">Tipi di presidio, dotazioni standard e checklist si modificano direttamente nel foglio Google del database (schede Tipi, Dotazioni, Checklist).</p>' + l.map(function (x) {
+var input = x.chiave === 'MODALITA_PROVA'
+? '<select data-k="' + esc(x.chiave) + '">' + opzioni([{ v: 'SI', t: 'SI - prova' }, { v: 'NO', t: 'NO - produzione' }], x.valore || 'SI') + '</select>'
+: '<input data-k="' + esc(x.chiave) + '" value="' + esc(x.valore) + '">';
+return '<label>' + esc(x.chiave) + '</label>' + input + '<p class="sez-nota" style="margin:3px 0 0">' + esc(x.descrizione) + '</p>';
+}).join('') +
+'<div class="sezione" style="margin-top:18px"><div class="sez-titolo">Azioni manuali</div><div class="barra-azioni">' +
+'<button class="btn-az grigio" onclick="azioneAdmin(\'eseguiBackupOra\')">💾 Backup del database ora</button>' +
+'<button class="btn-az grigio" onclick="azioneAdmin(\'eseguiControlliGiornalieriOra\')">⏳ Controllo scadenze ora</button>' +
+'<button class="btn-az grigio" onclick="azioneAdmin(\'inviaRiepilogoOra\')">📧 Invia il riepilogo settimanale ora</button></div></div>';
+apriFinestra('⚙️ Impostazioni', h, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button><button class="btn-az verde" onclick="salvaImp()">💾 Salva impostazioni</button>', { stretta: true });
+}).catch(erroreApi);
+}
+function salvaImp() {
+var v = {};
+Array.prototype.forEach.call(document.querySelectorAll('[data-k]'), function (el) { v[el.getAttribute('data-k')] = el.value; });
+attesa(true);
+api('salvaImpostazioni', tok(), v).then(function (m) { attesa(false); avviso('✅ ' + m); caricaDashboard(); }).catch(erroreApi);
+}
+function azioneAdmin(fn) {
+attesa(true, 'Operazione in corso...');
+api(fn, tok()).then(function (m) { attesa(false); avviso('✅ ' + m); }).catch(erroreApi);
+}
+function apriRegistro() {
+attesa(true);
+api('getRegistro', tok(), 400).then(function (l) {
+attesa(false);
+var h = '<div style="overflow-x:auto"><table class="table-dashboard"><tr><th>Data e ora</th><th>Utente</th><th>Azione</th><th>Oggetto</th><th>Dettaglio</th></tr>' + l.map(function (r) {
+return '<tr><td style="white-space:nowrap">' + dataOra(r.dataOra) + '</td><td>' + esc(r.utente) + '</td><td>' + esc(r.azione) + '</td><td>' + esc(r.oggetto) + '</td><td><small>' + esc(r.dettaglio) + '</small></td></tr>';
+}).join('') + '</table></div>';
+apriFinestra('📜 Registro attività (ultime ' + l.length + ')', h, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Chiudi</button>');
+}).catch(erroreApi);
+}
+function apriCambioPassword() {
+var h = '<input type="text" autocomplete="username" value="' + esc(S.utente.username) + '" style="display:none">' +
+'<label>Password attuale</label><input type="password" id="cp0" autocomplete="current-password">' +
+'<label>Nuova password</label><input type="password" id="cp1" autocomplete="new-password">' +
+'<label>Ripeti la nuova password</label><input type="password" id="cp2" autocomplete="new-password">' +
+'<p class="sez-nota" style="margin:6px 0 0">Almeno 10 caratteri, con lettere e numeri.</p>';
+apriFinestra('🔑 Cambia password', h, '<button class="btn-az chiaro" onclick="chiudiFinestra()">Annulla</button><button class="btn-az verde" onclick="salvaCambioPassword()">Salva</button>', { stretta: true });
+}
+function salvaCambioPassword() {
+if ($('cp1').value !== $('cp2').value) return avviso('⚠️ Le due password nuove non coincidono.');
+attesa(true);
+api('cambiaPassword', tok(), $('cp0').value, $('cp1').value).then(function (m) { attesa(false); chiudiFinestra(); avviso('✅ ' + m); }).catch(erroreApi);
+}
+document.addEventListener('keydown', function (e) {
+if (e.key !== 'Escape') return;
+if ($('visoreFoto').style.display === 'flex') { $('visoreFoto').style.display = 'none'; return; }
+if ($('customAlertOverlay').style.display === 'block') return chiudiAvviso();
+if ($('customConfirmOverlay').style.display === 'block') return rispostaConferma(false);
+if ($('finestra').style.display === 'flex') chiudiFinestra();
+});
+</script> </body> </html>
